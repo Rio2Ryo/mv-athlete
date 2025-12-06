@@ -1,367 +1,258 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { ArrowRight, Check, Leaf, Zap, Globe, Activity, HeartPulse, Users, Factory, Coins } from "lucide-react";
+import { Leaf, Globe, ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-background text-foreground overflow-x-hidden font-sans selection:bg-primary selection:text-primary-foreground">
+    <div className="min-h-screen bg-black text-white font-sans selection:bg-primary selection:text-black">
       
-      {/* Navigation */}
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-white/10">
-        <div className="container mx-auto px-4 h-20 flex items-center justify-between">
-          <div className="flex items-center gap-2">
-            <Leaf className="h-8 w-8 text-primary" />
-            <span className="font-display font-bold text-xl tracking-wider text-white">
-              MOTHER<span className="text-primary">VEGETABLE</span>
-            </span>
+      {/* Navigation - Mimicking the reference site's minimal top right nav */}
+      <nav className="fixed top-0 left-0 right-0 z-50 bg-transparent pt-6 px-8">
+        <div className="flex justify-between items-start">
+          <div className="flex flex-col">
+            <div className="flex items-center gap-2 text-primary mb-1">
+              <Leaf className="h-8 w-8" />
+              <span className="font-bold text-xl tracking-wider">MOTHER<br/>VEGETABLE</span>
+            </div>
           </div>
-          <div className="hidden md:flex items-center gap-8 font-tech text-lg tracking-wide">
-            <a href="#about" className="hover:text-primary transition-colors">About</a>
-            <a href="#benefits" className="hover:text-primary transition-colors">Benefits</a>
-            <a href="#support" className="hover:text-primary transition-colors">Support</a>
-            <a href="#factory" className="hover:text-primary transition-colors">Factory</a>
-            <Button variant="default" className="bg-primary text-black hover:bg-primary/90 font-bold">
-              Join Foundation
+          
+          <div className="flex items-center gap-4">
+            <Button variant="ghost" className="text-white hover:text-primary hover:bg-transparent font-normal text-sm uppercase tracking-widest border border-transparent hover:border-primary rounded-none px-6 py-2 transition-all">
+              Products
+            </Button>
+            <Button variant="ghost" className="text-white hover:text-primary hover:bg-transparent font-normal text-sm uppercase tracking-widest border border-white hover:border-primary rounded-none px-4 py-2 transition-all">
+              EN
             </Button>
           </div>
         </div>
       </nav>
 
-      {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden">
-        {/* Background Earth */}
+      {/* Hero Section - Exact replica of reference site structure */}
+      <section className="relative h-screen flex flex-col items-center justify-center overflow-hidden">
+        {/* Background Earth - Centered and large */}
         <div className="absolute inset-0 z-0 flex items-center justify-center">
-          <div className="relative w-[120vw] h-[120vw] md:w-[80vw] md:h-[80vw] max-w-[1200px] max-h-[1200px] animate-spin-slow opacity-80">
+          <div className="relative w-[80vh] h-[80vh] md:w-[90vh] md:h-[90vh] max-w-[1000px] max-h-[1000px] opacity-100">
             <img 
               src="/images/hero-earth.png" 
               alt="Mother Earth" 
-              className="w-full h-full object-contain drop-shadow-[0_0_100px_rgba(57,255,20,0.3)]"
+              className="w-full h-full object-contain"
             />
           </div>
         </div>
         
-        {/* Overlay Gradient */}
-        <div className="absolute inset-0 z-10 bg-gradient-to-b from-background/30 via-transparent to-background"></div>
+        {/* Center Logo Overlay */}
+        <div className="absolute z-10 flex flex-col items-center justify-center">
+          <Leaf className="h-24 w-24 md:h-32 md:w-32 text-primary mb-8 drop-shadow-[0_0_15px_rgba(0,255,65,0.5)]" />
+        </div>
 
-        {/* Content */}
-        <div className="container relative z-20 mx-auto px-4 text-center">
-          <motion.div 
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            className="max-w-4xl mx-auto"
-          >
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/30 text-primary mb-6 backdrop-blur-sm">
-              <span className="relative flex h-3 w-3">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
-                <span className="relative inline-flex rounded-full h-3 w-3 bg-primary"></span>
-              </span>
-              <span className="font-tech tracking-widest text-sm font-bold uppercase">The Future of Athlete Nutrition</span>
-            </div>
-            
-            <h1 className="font-display text-5xl md:text-7xl lg:text-8xl font-bold leading-tight mb-6 text-transparent bg-clip-text bg-gradient-to-b from-white to-white/70 drop-shadow-lg">
-              MOTHER VEGETABLE<br />
-              <span className="text-primary drop-shadow-[0_0_30px_rgba(57,255,20,0.6)]">ATHLETE FOUNDATION</span>
-            </h1>
-            
-            <p className="font-sans text-xl md:text-2xl text-gray-300 mb-10 max-w-2xl mx-auto leading-relaxed">
-              Empowering athletes through 3.5 billion years of nature's wisdom, 
-              sustainable financial support, and entrepreneurial growth.
-            </p>
-            
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-              <Button size="lg" className="bg-primary text-black hover:bg-primary/90 font-bold text-lg px-8 py-6 rounded-full shadow-[0_0_20px_rgba(57,255,20,0.4)] hover:shadow-[0_0_40px_rgba(57,255,20,0.6)] transition-all">
-                Become a Supported Athlete
-              </Button>
-              <Button size="lg" variant="outline" className="border-white/20 text-white hover:bg-white/10 font-bold text-lg px-8 py-6 rounded-full backdrop-blur-sm">
-                Explore Our Mission
-              </Button>
-            </div>
-          </motion.div>
+        {/* Main Title - Centered over Earth */}
+        <div className="absolute z-20 w-full text-center top-1/2 pt-24 md:pt-32 transform -translate-y-1/2">
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-primary tracking-tight uppercase drop-shadow-lg">
+            MOTHER VEGETABLE<br/>ATHLETE FOUNDATION
+          </h1>
+        </div>
+
+        {/* Bottom Text */}
+        <div className="absolute bottom-12 z-20 text-center w-full px-4">
+          <p className="text-primary/80 text-lg md:text-xl mb-2 tracking-wide">
+            The vegetable from 3.5 billion years ago
+          </p>
+          <p className="text-white text-2xl md:text-3xl font-light tracking-wider">
+            "Mother Vegetable"
+          </p>
+          <p className="text-gray-400 text-sm mt-4 tracking-widest uppercase">
+            Earth's life force, for athletes.
+          </p>
         </div>
       </section>
 
-      {/* About Mother Vegetable */}
-      <section id="about" className="py-24 relative bg-background">
-        <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-2 gap-16 items-center">
-            <motion.div 
-              initial={{ opacity: 0, x: -50 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
-            >
-              <h2 className="font-display text-4xl md:text-5xl font-bold mb-6">
-                <span className="text-primary">3.5 Billion Years</span><br />
-                Of Evolution
-              </h2>
-              <p className="text-lg text-gray-300 mb-6 leading-relaxed">
-                We cultivate "Mother Vegetable," the Earth's first plant life form. 
-                Grown in our advanced climate-controlled factories, it generates oxygen 
-                and absorbs CO2 24 hours a day, 365 days a year.
+      {/* Two Only Ones Section - Mimicking the reference layout */}
+      <section className="py-24 bg-black relative z-10">
+        <div className="container mx-auto px-6 md:px-12 max-w-5xl text-center">
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-12 tracking-wide">
+            Two Only Ones
+          </h2>
+          
+          <p className="text-xl md:text-2xl text-gray-300 leading-relaxed mb-12 font-light">
+            The <span className="text-primary font-normal">MOTHER VEGETABLE ATHLETE FOUNDATION</span> is<br/>
+            the world's only project that aims to empower athletes and restore the Earth,<br/>
+            centered around two one-of-a-kind support systems.
+          </p>
+          
+          <p className="text-gray-400 leading-relaxed mb-12 max-w-3xl mx-auto">
+            In this process, each facility purifies the atmosphere by absorbing CO2
+            and generating oxygen 24 hours a day, 365 days a year,
+            while simultaneously contributing to improving the health of athletes
+            through Mother Vegetable products and sustainable financial support.
+          </p>
+          
+          <p className="text-gray-400 leading-relaxed max-w-3xl mx-auto">
+            Furthermore, by expanding these facilities around the world,
+            it will develop into a global network of athlete-entrepreneurs.
+          </p>
+        </div>
+      </section>
+
+      {/* Section I: Mother Vegetable (Nutrition) */}
+      <section className="py-24 bg-black border-t border-gray-900">
+        <div className="container mx-auto px-6 md:px-12 max-w-5xl">
+          <div className="flex flex-col md:flex-row gap-12">
+            <div className="md:w-1/3">
+              <h3 className="text-6xl font-bold text-gray-800 mb-4">I</h3>
+              <h4 className="text-3xl font-bold text-primary mb-6">Mother Vegetable<br/>Nutrition</h4>
+            </div>
+            <div className="md:w-2/3">
+              <p className="text-gray-300 mb-8 leading-relaxed">
+                By researching the evolutionary journey of Mother Vegetable, Earth's first vegetable, 
+                we offer a professional-grade solution for athletes:
               </p>
-              <div className="grid grid-cols-2 gap-6 mb-8">
-                <div className="p-4 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-sm">
-                  <div className="text-3xl font-display font-bold text-primary mb-1">700x</div>
-                  <div className="text-sm text-gray-400">CO2 Reduction vs Natural Cedar</div>
+              
+              <div className="space-y-8">
+                <div className="border-l-2 border-primary pl-6">
+                  <h5 className="text-xl font-bold text-white mb-2">① Achieve (Professional)</h5>
+                  <p className="text-gray-400">
+                    Food derived from a single life form that provides all 48 nutrients essential for humanity.
+                    Optimized for athlete recovery, gut health, and continuous performance.
+                  </p>
                 </div>
-                <div className="p-4 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-sm">
-                  <div className="text-3xl font-display font-bold text-primary mb-1">48</div>
-                  <div className="text-sm text-gray-400">Essential Nutrients</div>
+                
+                <div className="border-l-2 border-gray-700 pl-6">
+                  <h5 className="text-xl font-bold text-white mb-2">② Continuous Performance</h5>
+                  <p className="text-gray-400">
+                    Supports a healthy gut and immune system, ensuring athletes never miss a training session due to illness or fatigue.
+                  </p>
                 </div>
               </div>
-              <ul className="space-y-3">
-                {["Amino Acids & Vitamins", "Minerals & Omega-3/6", "Phycocyanin & Chlorophyll", "Complete Protein Source"].map((item, i) => (
-                  <li key={i} className="flex items-center gap-3 text-gray-300">
-                    <Check className="text-primary h-5 w-5" />
-                    {item}
-                  </li>
-                ))}
-              </ul>
-            </motion.div>
-            
-            <motion.div 
-              initial={{ opacity: 0, scale: 0.9 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
-              className="relative"
-            >
-              <div className="absolute inset-0 bg-primary/20 blur-[100px] rounded-full"></div>
-              <img 
-                src="/images/nutrient-structure.png" 
-                alt="Nutrient Structure" 
-                className="relative z-10 w-full rounded-3xl border border-white/10 shadow-2xl"
-              />
-            </motion.div>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Athlete Benefits */}
-      <section id="benefits" className="py-24 bg-secondary/30 relative overflow-hidden">
-        <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-primary/50 to-transparent"></div>
-        
-        <div className="container mx-auto px-4">
-          <div className="text-center max-w-3xl mx-auto mb-16">
-            <h2 className="font-display text-4xl md:text-5xl font-bold mb-6">Why Athletes Need This</h2>
-            <p className="text-xl text-gray-300">
-              It's not just about muscle. It's about the foundation of your health that allows you to train consistently without interruption.
-            </p>
+      {/* Section II: Small Earth Factory (Support) */}
+      <section className="py-24 bg-black border-t border-gray-900">
+        <div className="container mx-auto px-6 md:px-12 max-w-5xl">
+          <div className="flex flex-col md:flex-row gap-12">
+            <div className="md:w-1/3">
+              <h3 className="text-6xl font-bold text-gray-800 mb-4">II</h3>
+              <h4 className="text-3xl font-bold text-primary mb-6">Small Earth Factory<br/>(SEF)</h4>
+            </div>
+            <div className="md:w-2/3">
+              <p className="text-gray-300 mb-8 leading-relaxed">
+                A revolutionary support system that allows athletes to build sustainable wealth while healing the planet:
+              </p>
+              
+              <div className="space-y-8">
+                <div className="border-l-2 border-primary pl-6">
+                  <h5 className="text-xl font-bold text-white mb-2">① Financial Support</h5>
+                  <p className="text-gray-400">
+                    Athletes receive support through MVP Coin and profit sharing from Small Earth Factories established in their hometowns.
+                  </p>
+                </div>
+                
+                <div className="border-l-2 border-gray-700 pl-6">
+                  <h5 className="text-xl font-bold text-white mb-2">② CO2 Offset Revenue</h5>
+                  <p className="text-gray-400">
+                    Recreating a small Earth through CO2 absorption (700 times that of natural cedar).
+                    Revenue from carbon credits (~$72,240/year) supports the athlete's career.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
+        </div>
+      </section>
 
-          <div className="grid md:grid-cols-3 gap-8">
+      {/* Athlete Benefits Grid - Mimicking the "8 Industry Approaches" section */}
+      <section className="py-24 bg-black border-t border-gray-900">
+        <div className="container mx-auto px-6 md:px-12 max-w-6xl">
+          <h2 className="text-3xl font-bold text-white mb-16 text-center">Athlete Benefits</h2>
+          
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
               {
-                icon: <Activity className="h-10 w-10 text-primary" />,
+                icon: "💪",
                 title: "Continuous Training",
-                desc: "Improved gut health and immunity means fewer sick days and missed training sessions. Consistency is the key to performance."
+                subtitle: "Never Miss a Day",
+                desc: "Improved gut health and immunity means consistent training without interruption."
               },
               {
-                icon: <Zap className="h-10 w-10 text-primary" />,
+                icon: "⚡",
                 title: "Efficient Recovery",
-                desc: "48 essential nutrients work together to reduce inflammation and speed up recovery between intense workouts."
+                subtitle: "48 Essential Nutrients",
+                desc: "Complete nutrition reduces inflammation and speeds up recovery between sessions."
               },
               {
-                icon: <HeartPulse className="h-10 w-10 text-primary" />,
-                title: "Holistic Health",
-                desc: "We don't just target muscles. We optimize your entire biological system, from cellular regeneration to sleep quality."
+                icon: "💰",
+                title: "Financial Freedom",
+                subtitle: "MVP Coin Support",
+                desc: "Direct sponsorship and cryptocurrency allocation to fund your athletic journey."
+              },
+              {
+                icon: "🏭",
+                title: "Future Security",
+                subtitle: "Factory Ownership",
+                desc: "Establish a Small Earth Factory in your hometown for long-term sustainable income."
               }
-            ].map((feature, i) => (
-              <motion.div
-                key={i}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: i * 0.2 }}
-              >
-                <Card className="bg-card/50 border-white/10 backdrop-blur-md hover:border-primary/50 transition-all duration-300 h-full group">
-                  <CardContent className="p-8">
-                    <div className="mb-6 p-4 rounded-full bg-primary/10 w-fit group-hover:bg-primary/20 transition-colors">
-                      {feature.icon}
-                    </div>
-                    <h3 className="font-display text-2xl font-bold mb-4">{feature.title}</h3>
-                    <p className="text-gray-400 leading-relaxed">
-                      {feature.desc}
-                    </p>
-                  </CardContent>
-                </Card>
-              </motion.div>
+            ].map((item, i) => (
+              <div key={i} className="text-center p-6 hover:bg-gray-900/30 transition-colors rounded-lg">
+                <div className="text-4xl mb-4">{item.icon}</div>
+                <div className="text-primary text-sm font-bold uppercase tracking-widest mb-2">{i + 1}. {item.title}</div>
+                <h3 className="text-xl font-bold text-white mb-4">{item.subtitle}</h3>
+                <p className="text-gray-400 text-sm leading-relaxed">
+                  {item.desc}
+                </p>
+              </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Support System */}
-      <section id="support" className="py-24 relative">
-        <div className="container mx-auto px-4">
-          <div className="grid lg:grid-cols-2 gap-12">
-            {/* Pillar 1 */}
-            <div className="relative group">
-              <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-              <div className="relative bg-card border border-white/10 rounded-3xl p-10 h-full overflow-hidden">
-                <div className="absolute top-0 right-0 p-8 opacity-10">
-                  <Leaf className="h-40 w-40" />
-                </div>
-                <h3 className="font-display text-3xl font-bold mb-2 text-primary">Pillar 01</h3>
-                <h4 className="font-display text-4xl font-bold mb-6">Professional Nutrition</h4>
-                <p className="text-gray-300 text-lg mb-8 leading-relaxed">
-                  Receive a continuous supply of our professional-grade "Achieve" product. 
-                  Designed specifically for athletes to ensure you never run out of the fuel your body needs.
-                </p>
-                <ul className="space-y-4 mb-8">
-                  <li className="flex items-center gap-3">
-                    <div className="h-2 w-2 rounded-full bg-primary"></div>
-                    <span>Medical-grade quality assurance</span>
-                  </li>
-                  <li className="flex items-center gap-3">
-                    <div className="h-2 w-2 rounded-full bg-primary"></div>
-                    <span>Tailored for high-performance needs</span>
-                  </li>
-                  <li className="flex items-center gap-3">
-                    <div className="h-2 w-2 rounded-full bg-primary"></div>
-                    <span>Full sponsorship of nutritional needs</span>
-                  </li>
-                </ul>
-                <Button variant="outline" className="border-primary text-primary hover:bg-primary hover:text-black w-full">
-                  Learn About Achieve
-                </Button>
-              </div>
-            </div>
-
-            {/* Pillar 2 */}
-            <div className="relative group">
-              <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 to-transparent rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-              <div className="relative bg-card border border-white/10 rounded-3xl p-10 h-full overflow-hidden">
-                <div className="absolute top-0 right-0 p-8 opacity-10">
-                  <Coins className="h-40 w-40" />
-                </div>
-                <h3 className="font-display text-3xl font-bold mb-2 text-blue-400">Pillar 02</h3>
-                <h4 className="font-display text-4xl font-bold mb-6">Financial Support Ecosystem</h4>
-                <p className="text-gray-300 text-lg mb-8 leading-relaxed">
-                  We don't just give you money; we give you a business. 
-                  Through MVP Coin and the Small Earth Factory initiative, you can build sustainable wealth.
-                </p>
-                <ul className="space-y-4 mb-8">
-                  <li className="flex items-center gap-3">
-                    <div className="h-2 w-2 rounded-full bg-blue-400"></div>
-                    <span>MVP Coin sponsorship allocation</span>
-                  </li>
-                  <li className="flex items-center gap-3">
-                    <div className="h-2 w-2 rounded-full bg-blue-400"></div>
-                    <span>Establish a factory in your hometown</span>
-                  </li>
-                  <li className="flex items-center gap-3">
-                    <div className="h-2 w-2 rounded-full bg-blue-400"></div>
-                    <span>Profit sharing from factory revenue</span>
-                  </li>
-                </ul>
-                <Button variant="outline" className="border-blue-400 text-blue-400 hover:bg-blue-400 hover:text-black w-full">
-                  Explore Financial Model
-                </Button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Small Earth Factory */}
-      <section id="factory" className="py-24 relative bg-black overflow-hidden">
-        <div className="absolute inset-0 opacity-40">
-          <img src="/images/factory-interior.png" alt="Factory" className="w-full h-full object-cover" />
-          <div className="absolute inset-0 bg-gradient-to-t from-black via-black/80 to-transparent"></div>
-        </div>
-
-        <div className="container relative z-10 mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center mb-16">
-            <h2 className="font-display text-4xl md:text-6xl font-bold mb-6">Small Earth Factory</h2>
-            <p className="text-xl text-gray-300">
-              Build a legacy in your community. A sustainable business that heals the planet while supporting your athletic career.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-8 text-center">
-            <div className="p-8 rounded-2xl bg-black/50 border border-white/10 backdrop-blur-md">
-              <Globe className="h-12 w-12 text-primary mx-auto mb-6" />
-              <h3 className="font-display text-2xl font-bold mb-2">Environmental Impact</h3>
-              <p className="text-gray-400">Absorbs 2,800 tons of CO2 per year. Equivalent to a forest 700x its size.</p>
-            </div>
-            <div className="p-8 rounded-2xl bg-black/50 border border-white/10 backdrop-blur-md">
-              <Factory className="h-12 w-12 text-primary mx-auto mb-6" />
-              <h3 className="font-display text-2xl font-bold mb-2">Local Economy</h3>
-              <p className="text-gray-400">Create jobs and sustainable industry in your hometown or region.</p>
-            </div>
-            <div className="p-8 rounded-2xl bg-black/50 border border-white/10 backdrop-blur-md">
-              <Coins className="h-12 w-12 text-primary mx-auto mb-6" />
-              <h3 className="font-display text-2xl font-bold mb-2">Revenue Stream</h3>
-              <p className="text-gray-400">Earn from carbon credits (~$72k/year) and product sales.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* CTA Section */}
-      <section className="py-32 relative overflow-hidden">
-        <div className="absolute inset-0 bg-primary/5"></div>
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-primary/20 rounded-full blur-[120px]"></div>
-        
-        <div className="container relative z-10 mx-auto px-4 text-center">
-          <h2 className="font-display text-5xl md:text-7xl font-bold mb-8">Ready to Join the Movement?</h2>
-          <p className="text-xl md:text-2xl text-gray-300 mb-12 max-w-2xl mx-auto">
-            We are looking for athletes who want to perform at their peak and build a sustainable future for themselves and the planet.
+      {/* Call to Action - Minimalist style */}
+      <section className="py-32 bg-black border-t border-gray-900 text-center">
+        <div className="container mx-auto px-6">
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-8">Join the Foundation</h2>
+          <p className="text-gray-400 text-lg mb-12 max-w-2xl mx-auto">
+            We are looking for athletes who want to perform at their peak and build a sustainable future.
           </p>
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
-            <Button size="lg" className="bg-primary text-black hover:bg-primary/90 font-bold text-xl px-12 py-8 rounded-full shadow-[0_0_30px_rgba(57,255,20,0.5)] hover:shadow-[0_0_50px_rgba(57,255,20,0.7)] transition-all w-full sm:w-auto">
-              Apply for Sponsorship
+          
+          <div className="flex flex-col md:flex-row justify-center gap-6">
+            <Button className="bg-primary text-black hover:bg-primary/90 font-bold text-lg px-12 py-6 rounded-none uppercase tracking-widest">
+              Apply Now
             </Button>
-            <Button size="lg" variant="outline" className="border-white/20 text-white hover:bg-white/10 font-bold text-xl px-12 py-8 rounded-full w-full sm:w-auto">
+            <Button variant="outline" className="border-white text-white hover:bg-white hover:text-black font-bold text-lg px-12 py-6 rounded-none uppercase tracking-widest">
               Contact Us
             </Button>
           </div>
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="bg-black border-t border-white/10 py-16">
-        <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-4 gap-12 mb-12">
-            <div className="col-span-2">
-              <div className="flex items-center gap-2 mb-6">
-                <Leaf className="h-8 w-8 text-primary" />
-                <span className="font-display font-bold text-xl tracking-wider text-white">
-                  MOTHER<span className="text-primary">VEGETABLE</span>
-                </span>
-              </div>
-              <p className="text-gray-400 max-w-md">
-                The world's only project that aims to restore the Earth and all life, centered around two one-of-a-kind businesses.
-              </p>
-            </div>
-            <div>
-              <h4 className="font-bold text-white mb-6">Foundation</h4>
-              <ul className="space-y-4 text-gray-400">
-                <li><a href="#" className="hover:text-primary transition-colors">About Us</a></li>
-                <li><a href="#" className="hover:text-primary transition-colors">Athletes</a></li>
-                <li><a href="#" className="hover:text-primary transition-colors">Small Earth Factory</a></li>
-                <li><a href="#" className="hover:text-primary transition-colors">MVP Coin</a></li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="font-bold text-white mb-6">Connect</h4>
-              <ul className="space-y-4 text-gray-400">
-                <li><a href="#" className="hover:text-primary transition-colors">Contact Support</a></li>
-                <li><a href="#" className="hover:text-primary transition-colors">Apply Now</a></li>
-                <li><a href="https://mothervegetable.org" target="_blank" className="hover:text-primary transition-colors flex items-center gap-2">Main Website <ArrowRight className="h-4 w-4" /></a></li>
-              </ul>
+      {/* Footer - Exact replica */}
+      <footer className="bg-black border-t border-gray-900 py-12 text-center">
+        <div className="container mx-auto px-6">
+          <div className="flex flex-col items-center mb-12">
+            <p className="text-primary font-bold text-lg mb-4">Mother Vegetable Group</p>
+            <div className="flex flex-wrap justify-center gap-4 text-gray-500 text-sm">
+              <span>Japan</span>
+              <span>South Korea</span>
+              <span>Hong Kong</span>
+              <span>Malaysia</span>
+              <span>Singapore</span>
+              <span>Indonesia</span>
+              <span>Thailand</span>
+              <span>USA</span>
+              <span>Brazil</span>
+              <span>Peru</span>
             </div>
           </div>
-          <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-gray-500 text-sm">
-            <p>© 2025 MOTHER VEGETABLE PROJECT. All rights reserved.</p>
-            <div className="flex gap-6">
-              <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
-              <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
-            </div>
+          
+          <div className="text-gray-600 text-xs uppercase tracking-widest">
+            <span className="mx-2">Privacy Policy</span> | <span className="mx-2">Terms and Conditions</span>
           </div>
+          
+          <p className="text-gray-600 text-xs mt-6">
+            © 2025 MOTHER VEGETABLE PROJECT. All rights reserved.
+          </p>
         </div>
       </footer>
     </div>
