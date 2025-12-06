@@ -29,7 +29,7 @@ export default function AthleteRoster() {
         JP: '「撃つ・蹴る・斬る」をコンセプトに、立ち技格闘技の最強を決めるリング。キックボクシングの新たな可能性を切り拓き、選手たちの熱い戦いを通じて観客に感動と興奮を届ける。環境への配慮とスポーツの発展を両立させるパートナーとして参画。',
         EN: 'A ring to decide the strongest in striking martial arts with the concept of "Strike, Kick, Slash". Opening up new possibilities for kickboxing and delivering emotion and excitement to the audience through the heated battles of the fighters. Participating as a partner to balance environmental consideration and the development of sports.'
       },
-      image: '/images/knockout_logo.png'
+      image: '/images/knockout_action.webp'
     }
   ];
 
@@ -48,27 +48,27 @@ export default function AthleteRoster() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
           {roster.map((item, index) => (
-            <div key={index} className="group relative bg-gray-900 rounded-2xl overflow-hidden border border-gray-800 hover:border-[#4ade80]/50 transition-all duration-300">
+            <div key={index} className="bg-[#0f172a] border border-gray-800 rounded-xl overflow-hidden hover:border-[#4ade80]/50 transition-all duration-300 flex flex-col h-full">
               <div className="aspect-[4/3] bg-gray-800 relative overflow-hidden">
                 <img 
                   src={item.image} 
                   alt={t(item.name)}
                   className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-110"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-transparent to-transparent opacity-80"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-[#0f172a] via-transparent to-transparent opacity-90"></div>
               </div>
               
-              <div className="p-8 relative">
+              <div className="p-8 flex flex-col flex-grow text-center">
                 <div className="mb-4">
-                  <p className="text-[#4ade80] text-sm font-bold tracking-wider uppercase mb-2">{t(item.title)}</p>
-                  <h3 className="text-2xl font-bold text-white group-hover:text-[#4ade80] transition-colors">
+                  <p className="text-[#4ade80] text-xs font-bold tracking-wider uppercase mb-2">{t(item.title)}</p>
+                  <h3 className="text-xl font-bold text-white group-hover:text-[#4ade80] transition-colors">
                     {t(item.name)}
                   </h3>
                 </div>
                 
-                <p className="text-gray-400 leading-relaxed text-sm">
+                <p className="text-gray-400 leading-relaxed text-sm text-justify">
                   {t(item.description)}
                 </p>
               </div>
