@@ -99,6 +99,42 @@ export default function Partners() {
             EN: 'We collaborate in R&D with Universiti Malaya, Malaysia\'s premier institution. Their academic excellence and scientific expertise significantly advance our technological innovation. Through this industry-academia collaboration, we jointly pursue R&D aimed at sustainable development and social implementation, strengthening the scientific foundation of the Mother Vegetable project.' 
           }, 
           logo: '/images/malaya_logo.png' 
+        },
+        { 
+          name: { JP: 'マレーシア科学大学', EN: 'Universiti Sains Malaysia' }, 
+          type: { JP: '共同研究', EN: 'Joint Research' }, 
+          description: { 
+            JP: '微細藻類研究の分野で国際的に高い評価を受けているマレーシア科学大学と共同研究を実施しています。同大学の専門知識と研究施設を活用し、微細藻類の可能性を最大限に引き出す技術開発を進めています。持続可能な社会の実現に向けて、基礎研究から応用開発まで幅広い分野で協力関係を構築しています。', 
+            EN: 'We are conducting joint research with Universiti Sains Malaysia, which is internationally renowned in the field of microalgae research. Utilizing the university\'s expertise and research facilities, we are developing technologies to maximize the potential of microalgae. We are building cooperative relationships in a wide range of fields, from basic research to applied development, towards the realization of a sustainable society.' 
+          }, 
+          logo: '/images/usm_logo.png' 
+        },
+        { 
+          name: { JP: 'マレーシア国民大学', EN: 'Universiti Kebangsaan Malaysia' }, 
+          type: { JP: '共同研究', EN: 'Joint Research' }, 
+          description: { 
+            JP: 'Mother Vegetableプロジェクトの革新性と持続可能性に高い関心を示していただき、全面的な支援を受けています。現在、大学キャンパス内にMother Vegetable施設を設置する計画が進行中で、教育・研究・社会実装を一体化した新しいモデルの構築を目指しています。科学技術の発展と社会課題の解決に向けて、包括的な産学連携を推進しています。', 
+            EN: 'They have shown great interest in the innovation and sustainability of the Mother Vegetable project and are providing full support. Plans are currently underway to establish a Mother Vegetable facility within the university campus, aiming to build a new model that integrates education, research, and social implementation. We are promoting comprehensive industry-academia collaboration for the development of science and technology and the solution of social issues.' 
+          }, 
+          logo: '/images/ukm_logo.png' 
+        },
+        { 
+          name: { JP: 'マヒドン大学', EN: 'Mahidol University' }, 
+          type: { JP: '共同研究', EN: 'Joint Research' }, 
+          description: { 
+            JP: 'タイを代表する研究大学と共同で、家畜飼料における生物的防除剤（BCA）の革新的な応用研究を実施しています。畜産分野における成長促進と疾病耐性向上を目的とした実証実験を進めており、東南アジア地域の畜産業の持続可能な発展に貢献しています。', 
+            EN: 'In collaboration with Thailand\'s leading research university, we are conducting innovative applied research on biological control agents (BCA) in livestock feed. We are proceeding with demonstration experiments aimed at promoting growth and improving disease resistance in the livestock sector, contributing to the sustainable development of the livestock industry in Southeast Asia.' 
+          }, 
+          logo: '/images/mahidol_logo.png' 
+        },
+        { 
+          name: { JP: '明治大学', EN: 'Meiji University' }, 
+          type: { JP: 'スポンサーシップ協力', EN: 'Sponsorship Cooperation' }, 
+          description: { 
+            JP: '体育会競技者に対してMother Vegetable関連製品を提供するスポンサーシップ協力により、持続可能な栄養ソリューションを通じたスポーツパフォーマンスの支援を実施しています。', 
+            EN: 'Through sponsorship cooperation providing Mother Vegetable related products to athletic association competitors, we are implementing support for sports performance through sustainable nutrition solutions.' 
+          }, 
+          logo: '/images/meiji_logo.png' 
         }
       ]
     },
