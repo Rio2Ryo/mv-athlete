@@ -39,12 +39,39 @@ export default function Partners() {
           },
           logo: '/images/angkasa_logo.png'
         },
+        { 
+          name: { JP: 'Invest Selangor', EN: 'Invest Selangor' }, 
+          type: { JP: '政府機関', EN: 'Government Agency' }, 
+          description: { 
+            JP: 'セランゴール州政府が提供する優遇支援エコシステムの一員として、効率的な行政プロセス、カスタマイズされたインセンティブパッケージ、業界特化型プログラム、ネットワークとインフラへのアクセスを提供し、マレーシアで最も経済的に活発な州の一つでのプロジェクト成功を促進することを目指しています。', 
+            EN: 'Member of the preferential support ecosystem provided by the Selangor State Government, including efficient administrative processes, customized incentive packages, industry-specific programs, and access to networks and infrastructure, aiming to promote project success in one of Malaysia\'s most economically active states.' 
+          }, 
+          logo: '/images/invest_selangor_logo.png' 
+        },
+        { 
+          name: { JP: 'NEGERI PAHANG', EN: 'NEGERI PAHANG' }, 
+          type: { JP: 'パハン州政府', EN: 'Pahang State Government' }, 
+          description: { 
+            JP: 'マレーシア・パハン州の投資・産業・科学・技術・革新委員会の委員長より、Mother Vegetableへの投資提案に対する支援を受けています。特に技術と近代的な農業手法を用いて収量、効率、生産性を向上させることで、パハン州の農業セクターの経済発展を強化することを目指しています。執行委員会は、土地、資本、ネットワークを調整することで、大規模な持続可能な農業イニシアチブを加速させる触媒的な役割を果たしています。このパートナーシップは、民間セクターの投資とマレーシアの国家食料安全保障目標との整合性を強化します。', 
+            EN: 'The Chairman of the Investment, Industry, Science, Technology and Innovation Committee of Pahang State, Malaysia has given us support for the proposed investment in Mother Vegetable to enhance economic development of Pahang\'s agricultural sector, particularly through the use of technology and modern farming methods to increase yields, efficiency and productivity. The Executive Committee plays a catalytic role in accelerating large-scale sustainable agriculture initiatives by coordinating land, capital and networks. This partnership strengthens the alignment between private sector investment and Malaysia\'s national food security objectives.' 
+          }, 
+          logo: '/images/pahang_logo.jpg' 
+        },
+        { 
+          name: { JP: 'YTAA', EN: 'YTAA' }, 
+          type: { JP: 'Yayasan Tengku Abdul Aziz Sultan Abu Bakar', EN: 'Yayasan Tengku Abdul Aziz Sultan Abu Bakar' }, 
+          description: { 
+            JP: 'YTAAは社会的インパクトのためのチャネルとして機能し、サブスクリプション負担の軽減、教育イニシアチブ、ヘルスケアプログラム、マイクロファイナンスプロジェクトへの直接的な資金提供を確保し、地域教育、ホリスティックヘルス、持続可能性におけるエンジニアリングプロジェクトで協力しています。', 
+            EN: 'YTAA functions as a channel for social impact, ensuring direct funding for subscription burden reduction, educational initiatives, healthcare programs and microfinance projects, collaborating on engineering projects in regional education, holistic health and sustainability.' 
+          }, 
+          logo: '/images/ytaa_logo.png' 
+        }
       ]
     },
     {
       id: 'academic',
       title: { JP: '学術・研究機関', EN: 'Academic & Research Institutions' },
-      isOpen: false,
+      isOpen: true,
       partners: [
         { 
           name: { JP: 'ノッティンガム大学', EN: 'University of Nottingham' }, 
@@ -97,15 +124,6 @@ export default function Partners() {
             EN: 'With over 35 years of expertise in sustainable agriculture, aquaculture, and microbiology, serving as Chief Consultant to the ASEAN Secretariat and Official Advisor to Sri Lanka\'s Minister of Fisheries. Extensive experience in organic farming development and innovative aquaculture systems across Asia provides valuable regional expertise and government relationships.' 
           }, 
           logo: '/images/revoganix_logo.png' 
-        },
-        { 
-          name: { JP: 'Invest Selangor', EN: 'Invest Selangor' }, 
-          type: { JP: '政府機関', EN: 'Government Agency' }, 
-          description: { 
-            JP: 'セランゴール州政府が提供する優遇支援エコシステムの一員として、効率的な行政プロセス、カスタマイズされたインセンティブパッケージ、業界特化型プログラム、ネットワークとインフラへのアクセスを提供し、マレーシアで最も経済的に活発な州の一つでのプロジェクト成功を促進することを目指しています。', 
-            EN: 'Member of the preferential support ecosystem provided by the Selangor State Government, including efficient administrative processes, customized incentive packages, industry-specific programs, and access to networks and infrastructure, aiming to promote project success in one of Malaysia\'s most economically active states.' 
-          }, 
-          logo: '/images/invest_selangor_logo.png' 
         }
       ]
     }
