@@ -9,12 +9,36 @@ export default function Partners() {
   const partnerCategories = [
     {
       id: 'international',
-      title: { JP: '国際的パートナー', EN: 'International Partners' },
+      title: { JP: '政府・公的機関・地域パートナー', EN: 'Government, Public & Regional Partners' },
       isOpen: true,
       partners: [
-        { name: { JP: 'ASEAN', EN: 'ASEAN' }, type: { JP: '地域協力', EN: 'Regional Cooperation' } },
-        { name: { JP: 'マレーシア政府', EN: 'Government of Malaysia' }, type: { JP: '政府機関', EN: 'Government Agency' } },
-        { name: { JP: 'シンガポール', EN: 'Singapore' }, type: { JP: '戦略ハブ', EN: 'Strategic Hub' } },
+        { 
+          name: { JP: 'BioNexus ステータス企業', EN: 'BioNexus Status Company' }, 
+          type: { JP: 'マレーシア政府認可', EN: 'Malaysian Government Certified' },
+          description: {
+            JP: 'マレーシア政府の特別クラス・バイオテクノロジー企業として認定されており、バイオテクノロジー商業化の進歩のための実質的な財政的インセンティブ、税制優遇、制度的サポートへのアクセスを享受しています。',
+            EN: 'Certified as a special class biotechnology company by the Malaysian government, enjoying access to substantial financial incentives, tax breaks, and institutional support for the advancement of biotechnology commercialization.'
+          },
+          logo: '/images/bionexus_logo.png'
+        },
+        { 
+          name: { JP: 'ASEAN', EN: 'ASEAN' }, 
+          type: { JP: '東南アジア諸国連合', EN: 'Association of Southeast Asian Nations' },
+          description: {
+            JP: '持続可能な水産養殖および農業セクターにおけるパートナーシップからの公式支援により、東南アジア全10カ国にわたる地域に責任を有し、実際に実行可能な政策とシステムというASEANの共通ビジョンに貢献しています。',
+            EN: 'With official support from partnerships in the sustainable aquaculture and agriculture sectors, we are responsible for the region spanning all 10 Southeast Asian countries, contributing to ASEAN\'s shared vision of practical and actionable policies and systems.'
+          },
+          logo: '/images/asean_logo.png'
+        },
+        { 
+          name: { JP: 'ANGKASA', EN: 'ANGKASA' }, 
+          type: { JP: 'マレーシア政府機関', EN: 'Malaysian Government Agency' },
+          description: {
+            JP: '16,000以上の協同組合と730万人の組合員を代表する協同組合開発庁の組合員として、1,596億収益455億を超える価値を有しており、マレーシアの中核経済活動における第一セクターとして技術革新を果たしています。',
+            EN: 'As a member of the Cooperative Development Agency representing over 16,000 cooperatives and 7.3 million members, with a value exceeding 159.6 billion in revenue and 45.5 billion, we are achieving technological innovation as a primary sector in Malaysia\'s core economic activities.'
+          },
+          logo: '/images/angkasa_logo.png'
+        },
       ]
     },
     {
@@ -22,7 +46,7 @@ export default function Partners() {
       title: { JP: '学術・研究機関', EN: 'Academic & Research' },
       isOpen: false,
       partners: [
-        { name: { JP: '大学機関', EN: 'Universities' }, type: { JP: '共同研究', EN: 'Joint Research' } },
+        { name: { JP: '大学機関', EN: 'Universities' }, type: { JP: '共同研究', EN: 'Joint Research' }, description: { JP: '', EN: '' }, logo: null },
       ]
     },
     {
@@ -30,7 +54,7 @@ export default function Partners() {
       title: { JP: '産業パートナー', EN: 'Industry Partners' },
       isOpen: false,
       partners: [
-        { name: { JP: 'Coming Soon', EN: 'Coming Soon' }, type: { JP: '産業連携', EN: 'Industry Alliance' } },
+        { name: { JP: 'Coming Soon', EN: 'Coming Soon' }, type: { JP: '産業連携', EN: 'Industry Alliance' }, description: { JP: '', EN: '' }, logo: null },
       ]
     }
   ];
@@ -47,30 +71,23 @@ export default function Partners() {
     <section id="partners" className="py-24 bg-black border-t border-gray-900">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center mb-16">
-          <h2 className="text-3xl md:text-5xl font-bold text-[#4ade80] mb-8">
+          <h2 className="text-3xl md:text-5xl font-bold text-white mb-8">
             {t({ JP: 'パートナーシップ', EN: 'Partnership' })}
           </h2>
-          
-          <p className="text-lg md:text-xl text-white leading-relaxed">
-            {t({
-              JP: '私たちのミッションは、ASEANをはじめとする国際的なパートナー、学術機関、業界リーダーの強力なネットワークによって支えられています。',
-              EN: 'Our mission is supported by a powerful network of international partners, academic institutions, and industry leaders across ASEAN and beyond.'
-            })}
-          </p>
         </div>
 
-        <div className="max-w-5xl mx-auto space-y-4">
+        <div className="max-w-6xl mx-auto space-y-8">
           {categories.map((category) => (
-            <div key={category.id} className="border border-gray-800 rounded-xl overflow-hidden bg-gray-900/30">
+            <div key={category.id} className="overflow-hidden">
               <button
                 onClick={() => toggleCategory(category.id)}
-                className="w-full flex items-center justify-between p-6 text-left hover:bg-gray-800/50 transition-colors"
+                className="w-full flex items-center justify-center gap-4 p-4 text-center hover:opacity-80 transition-opacity mb-8"
               >
-                <h3 className="text-xl md:text-2xl font-bold text-white">
+                <h3 className="text-xl md:text-2xl font-bold text-[#3b82f6]">
                   {t(category.title)}
                 </h3>
                 {category.isOpen ? (
-                  <ChevronUp className="w-6 h-6 text-[#4ade80]" />
+                  <ChevronUp className="w-6 h-6 text-[#3b82f6]" />
                 ) : (
                   <ChevronDown className="w-6 h-6 text-gray-400" />
                 )}
@@ -78,21 +95,32 @@ export default function Partners() {
               
               <div 
                 className={cn(
-                  "transition-all duration-300 ease-in-out overflow-hidden",
-                  category.isOpen ? "max-h-[1000px] opacity-100" : "max-h-0 opacity-0"
+                  "transition-all duration-500 ease-in-out overflow-hidden",
+                  category.isOpen ? "max-h-[2000px] opacity-100" : "max-h-0 opacity-0"
                 )}
               >
-                <div className="p-6 pt-0 grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div className="grid md:grid-cols-3 gap-6">
                   {category.partners.map((partner, index) => (
                     <div 
                       key={index}
-                      className="bg-black/50 border border-gray-800 rounded-lg p-4 flex flex-col items-center justify-center text-center hover:border-[#4ade80]/30 transition-colors group aspect-square"
+                      className="bg-[#0f172a] border border-gray-800 rounded-xl p-8 flex flex-col items-center text-center hover:border-[#3b82f6]/50 transition-colors h-full"
                     >
-                      <div className="w-12 h-12 mb-3 rounded-full bg-gray-800 flex items-center justify-center group-hover:bg-[#4ade80]/10 transition-colors">
-                        <div className="w-6 h-6 rounded-full bg-[#4ade80] opacity-50 group-hover:opacity-100 transition-opacity"></div>
+                      <div className="w-32 h-32 mb-6 bg-white rounded-xl flex items-center justify-center p-4">
+                        {partner.logo ? (
+                          <img src={partner.logo} alt={t(partner.name)} className="w-full h-full object-contain" />
+                        ) : (
+                          <div className="w-16 h-16 rounded-full bg-gray-200"></div>
+                        )}
                       </div>
-                      <h4 className="text-white font-bold text-sm mb-1">{t(partner.name)}</h4>
-                      <p className="text-gray-500 text-[10px] uppercase tracking-wider">{t(partner.type)}</p>
+                      
+                      <h4 className="text-white font-bold text-lg mb-2">{t(partner.name)}</h4>
+                      <p className="text-[#3b82f6] text-sm font-medium mb-6">{t(partner.type)}</p>
+                      
+                      {partner.description.JP && (
+                        <p className="text-gray-400 text-sm leading-relaxed text-justify">
+                          {t(partner.description)}
+                        </p>
+                      )}
                     </div>
                   ))}
                 </div>
