@@ -43,18 +43,28 @@ export default function Partners() {
     },
     {
       id: 'academic',
-      title: { JP: '学術・研究機関', EN: 'Academic & Research' },
+      title: { JP: '学術・研究機関', EN: 'Academic & Research Institutions' },
       isOpen: false,
       partners: [
-        { name: { JP: '大学機関', EN: 'Universities' }, type: { JP: '共同研究', EN: 'Joint Research' }, description: { JP: '', EN: '' }, logo: null },
+        { 
+          name: { JP: '大学機関', EN: 'Universities' }, 
+          type: { JP: '共同研究', EN: 'Joint Research' }, 
+          description: { JP: '', EN: '' }, 
+          logo: null 
+        }
       ]
     },
     {
       id: 'industry',
-      title: { JP: '産業パートナー', EN: 'Industry Partners' },
+      title: { JP: '産業パートナー', EN: 'Industrial Partners' },
       isOpen: false,
       partners: [
-        { name: { JP: 'Coming Soon', EN: 'Coming Soon' }, type: { JP: '産業連携', EN: 'Industry Alliance' }, description: { JP: '', EN: '' }, logo: null },
+        { 
+          name: { JP: 'Coming Soon', EN: 'Coming Soon' }, 
+          type: { JP: '産業連携', EN: 'Industry Alliance' }, 
+          description: { JP: '', EN: '' }, 
+          logo: null 
+        }
       ]
     }
   ];
@@ -74,6 +84,12 @@ export default function Partners() {
           <h2 className="text-3xl md:text-5xl font-bold text-white mb-8">
             {t({ JP: 'パートナーシップ', EN: 'Partnership' })}
           </h2>
+          <p className="text-gray-400 max-w-2xl mx-auto">
+            {t({
+              JP: '私たちは、政府、国際機関、研究機関との強力なパートナーシップを通じて、持続可能な未来の実現に取り組んでいます。',
+              EN: 'We are committed to realizing a sustainable future through strong partnerships with governments, international organizations, and research institutions.'
+            })}
+          </p>
         </div>
 
         <div className="max-w-6xl mx-auto space-y-8">
@@ -105,7 +121,7 @@ export default function Partners() {
                       key={index}
                       className="bg-[#0f172a] border border-gray-800 rounded-xl p-8 flex flex-col items-center text-center hover:border-[#3b82f6]/50 transition-colors h-full"
                     >
-                      <div className="w-32 h-32 mb-6 bg-white rounded-xl flex items-center justify-center p-4">
+                      <div className="w-32 h-32 mb-6 bg-white rounded-xl flex items-center justify-center p-4 shadow-lg">
                         {partner.logo ? (
                           <img src={partner.logo} alt={t(partner.name)} className="w-full h-full object-contain" />
                         ) : (
