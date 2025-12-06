@@ -77,15 +77,15 @@ export default function ProjectOverview() {
             
             <p className="text-gray-400 leading-relaxed mb-8 relative z-10">
               {t({
-                JP: '活動資金の支援に加え、故郷やゆかりの地に「Small Earth Factory」を設立する権利を提供。工場の収益の一部がアスリートに還元され、引退後の安定した収入源と地域貢献を実現します。',
-                EN: 'In addition to funding activities, we offer the right to establish a "Small Earth Factory" in your hometown. A portion of the factory\'s profits is returned to the athlete, ensuring a stable income source after retirement and community contribution.'
+                JP: '活動資金の支援に加え、故郷やゆかりの地に「Small Earth Factory (SEF)」を設立する権利を提供。工場の収益の一部がアスリートに還元され、引退後の安定した収入源と地域貢献を実現します。',
+                EN: 'In addition to funding activities, we offer the right to establish a "Small Earth Factory (SEF)" in your hometown. A portion of the factory\'s profits is returned to the athlete, ensuring a stable income source after retirement and community contribution.'
               })}
             </p>
             
             <ul className="space-y-4 relative z-10">
               {[
                 { JP: '活動資金の提供', EN: 'Activity Funding' },
-                { JP: '工場オーナー権', EN: 'Factory Ownership' },
+                { JP: 'SEFオーナー権', EN: 'SEF Ownership' },
                 { JP: '地域への利益還元', EN: 'Community Profit Sharing' }
               ].map((item, i) => (
                 <li key={i} className="flex items-center gap-3 text-gray-300">
@@ -111,8 +111,13 @@ export default function ProjectOverview() {
                   {t({ JP: '呼吸するたびに、地球を救う。', EN: 'Save the Earth with every breath.' })}
                 </p>
               </div>
-              <div className="bg-[#4ade80]/10 border border-[#4ade80] px-6 py-3 rounded-full">
-                <span className="text-[#4ade80] font-bold tracking-wider">OFFICIAL BADGE</span>
+              <div className="flex flex-col items-center">
+                <img 
+                  src="/images/certification_badge_v3.png" 
+                  alt="Carbon Neutral Athlete Certified" 
+                  className="w-32 h-32 object-contain drop-shadow-[0_0_15px_rgba(74,222,128,0.5)]"
+                />
+                <span className="text-[#4ade80] font-bold tracking-wider text-xs mt-2">CERTIFIED BADGE</span>
               </div>
             </div>
 
@@ -120,8 +125,8 @@ export default function ProjectOverview() {
               <div className="space-y-6 text-gray-300 leading-relaxed">
                 <p>
                   {t({
-                    JP: '人間は安静時でも1時間あたり約40リットルのCO2を排出します。激しい運動を行うアスリートの場合、その排出量はさらに増加します。',
-                    EN: 'Humans exhale about 40 liters of CO2 per hour even at rest. For athletes engaging in intense exercise, this emission increases significantly.'
+                    JP: '人間は安静時でも1時間あたり約15〜20リットルのCO2を排出します。激しい運動を行うアスリートの場合、その排出量は安静時の数倍から10倍以上に増加し、1時間あたり100リットルを超えることもあります。',
+                    EN: 'Humans exhale about 15-20 liters of CO2 per hour even at rest. For athletes engaging in intense exercise, this emission can increase significantly, potentially exceeding 100 liters per hour.'
                   })}
                 </p>
                 <p>
@@ -132,8 +137,8 @@ export default function ProjectOverview() {
                 </p>
                 <p>
                   {t({
-                    JP: 'アスリートが「マザーベジタブルファクトリー」を持つことで、自身の排出するCO2を吸収・還元し、カーボンクレジットを生み出します。パフォーマンスの向上が、そのまま地球環境への貢献となる新しいモデルです。',
-                    EN: 'By owning a "Mother Vegetable Factory", athletes absorb and offset their CO2 emissions, creating carbon credits. It is a new model where improving performance directly contributes to the global environment.'
+                    JP: 'アスリートが「Small Earth Factory (SEF)」を持つことで、自身の排出するCO2を吸収・還元し、カーボンクレジットを生み出します。パフォーマンスの向上が、そのまま地球環境への貢献となる新しいモデルです。',
+                    EN: 'By owning a "Small Earth Factory (SEF)", athletes absorb and offset their CO2 emissions, creating carbon credits. It is a new model where improving performance directly contributes to the global environment.'
                   })}
                 </p>
               </div>
@@ -145,12 +150,12 @@ export default function ProjectOverview() {
                 <div className="space-y-6">
                   <div className="flex items-center justify-between">
                     <span className="text-gray-400">{t({ JP: '安静時の呼吸', EN: 'Resting Breath' })}</span>
-                    <span className="text-white font-mono text-xl">~40 L/h</span>
+                    <span className="text-white font-mono text-xl">~15-20 L/h</span>
                   </div>
                   <div className="w-full h-px bg-gray-800"></div>
                   <div className="flex items-center justify-between">
                     <span className="text-gray-400">{t({ JP: 'アスリートの活動', EN: 'Athlete Activity' })}</span>
-                    <span className="text-[#4ade80] font-mono text-xl font-bold">High Emission</span>
+                    <span className="text-[#4ade80] font-mono text-xl font-bold">100+ L/h</span>
                   </div>
                   <div className="w-full h-px bg-gray-800"></div>
                   <div className="flex items-center justify-between">
@@ -159,7 +164,7 @@ export default function ProjectOverview() {
                   </div>
                   
                   <div className="mt-8 pt-6 border-t border-[#4ade80]/30 text-center">
-                    <p className="text-sm text-gray-400 mb-2">{t({ JP: 'マザーベジタブルファクトリーによる吸収', EN: 'Absorption by Mother Vegetable Factory' })}</p>
+                    <p className="text-sm text-gray-400 mb-2">{t({ JP: 'Small Earth Factory (SEF) による吸収', EN: 'Absorption by Small Earth Factory (SEF)' })}</p>
                     <div className="text-3xl font-bold text-[#4ade80]">CARBON OFFSET</div>
                   </div>
                 </div>
