@@ -23,6 +23,7 @@ export default function Header() {
   const navItems = [
     { id: 'about', label: { JP: 'プロジェクト概要', EN: 'About' } },
     { id: 'team', label: { JP: '支援アスリート', EN: 'Athletes' } },
+    { id: 'partners', label: { JP: 'パートナー', EN: 'Partners' } },
   ];
 
   const scrollToSection = (id: string) => {

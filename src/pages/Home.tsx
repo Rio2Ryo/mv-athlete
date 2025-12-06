@@ -2,6 +2,7 @@ import Header from '@/components/Header';
 import Hero from '@/components/Hero';
 import ProjectOverview from '@/components/ProjectOverview';
 import AthleteRoster from '@/components/AthleteRoster';
+import Partners from '@/components/Partners';
 import Footer from '@/components/Footer';
 import { LanguageProvider } from '@/contexts/LanguageContext';
 
@@ -14,6 +15,7 @@ export default function Home() {
           <Hero />
           <ProjectOverview />
           <AthleteRoster />
+          <Partners />
         </main>
         <Footer />
         

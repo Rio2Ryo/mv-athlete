@@ -33,7 +33,7 @@ export default function ProjectOverview() {
           </div>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+        <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto mb-20">
           {/* Card 1 */}
           <div className="group relative bg-gray-900/40 backdrop-blur-sm border border-gray-800 rounded-2xl p-8 md:p-12 hover:border-[#4ade80]/50 transition-all duration-500 overflow-hidden">
             <div className="absolute top-0 right-0 p-8 opacity-10 group-hover:opacity-20 transition-opacity">
@@ -94,6 +94,77 @@ export default function ProjectOverview() {
                 </li>
               ))}
             </ul>
+          </div>
+        </div>
+
+        {/* Carbon Neutral Athlete Section */}
+        <div className="max-w-6xl mx-auto bg-gradient-to-br from-gray-900 to-black border border-[#4ade80]/30 rounded-3xl p-8 md:p-16 relative overflow-hidden">
+          <div className="absolute top-0 right-0 w-64 h-64 bg-[#4ade80]/10 rounded-full blur-3xl -mr-32 -mt-32"></div>
+          
+          <div className="relative z-10">
+            <div className="flex flex-col md:flex-row items-start md:items-center justify-between mb-12 gap-6">
+              <div>
+                <h3 className="text-3xl md:text-4xl font-bold text-white mb-2">
+                  {t({ JP: 'カーボンニュートラル・アスリート', EN: 'Carbon Neutral Athlete' })}
+                </h3>
+                <p className="text-[#4ade80] font-bold text-lg">
+                  {t({ JP: '呼吸するたびに、地球を救う。', EN: 'Save the Earth with every breath.' })}
+                </p>
+              </div>
+              <div className="bg-[#4ade80]/10 border border-[#4ade80] px-6 py-3 rounded-full">
+                <span className="text-[#4ade80] font-bold tracking-wider">OFFICIAL BADGE</span>
+              </div>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-12 items-center">
+              <div className="space-y-6 text-gray-300 leading-relaxed">
+                <p>
+                  {t({
+                    JP: '人間は安静時でも1時間あたり約40リットルのCO2を排出します。激しい運動を行うアスリートの場合、その排出量はさらに増加します。',
+                    EN: 'Humans exhale about 40 liters of CO2 per hour even at rest. For athletes engaging in intense exercise, this emission increases significantly.'
+                  })}
+                </p>
+                <p>
+                  {t({
+                    JP: 'また、スタジアムで熱狂する観客も、応援と共に多くのCO2を排出しています。私たちは、この「避けられない排出」を「価値ある貢献」に変えます。',
+                    EN: 'Spectators cheering in stadiums also emit large amounts of CO2. We turn this "unavoidable emission" into a "valuable contribution".'
+                  })}
+                </p>
+                <p>
+                  {t({
+                    JP: 'アスリートが「マザーベジタブルファクトリー」を持つことで、自身の排出するCO2を吸収・還元し、カーボンクレジットを生み出します。パフォーマンスの向上が、そのまま地球環境への貢献となる新しいモデルです。',
+                    EN: 'By owning a "Mother Vegetable Factory", athletes absorb and offset their CO2 emissions, creating carbon credits. It is a new model where improving performance directly contributes to the global environment.'
+                  })}
+                </p>
+              </div>
+
+              <div className="bg-black/50 rounded-2xl p-8 border border-gray-800">
+                <h4 className="text-xl font-bold text-white mb-6 text-center">
+                  {t({ JP: 'CO2排出と吸収のサイクル', EN: 'Cycle of CO2 Emission & Absorption' })}
+                </h4>
+                <div className="space-y-6">
+                  <div className="flex items-center justify-between">
+                    <span className="text-gray-400">{t({ JP: '安静時の呼吸', EN: 'Resting Breath' })}</span>
+                    <span className="text-white font-mono text-xl">~40 L/h</span>
+                  </div>
+                  <div className="w-full h-px bg-gray-800"></div>
+                  <div className="flex items-center justify-between">
+                    <span className="text-gray-400">{t({ JP: 'アスリートの活動', EN: 'Athlete Activity' })}</span>
+                    <span className="text-[#4ade80] font-mono text-xl font-bold">High Emission</span>
+                  </div>
+                  <div className="w-full h-px bg-gray-800"></div>
+                  <div className="flex items-center justify-between">
+                    <span className="text-gray-400">{t({ JP: 'スタジアムの熱狂', EN: 'Stadium Excitement' })}</span>
+                    <span className="text-[#4ade80] font-mono text-xl font-bold">Massive Emission</span>
+                  </div>
+                  
+                  <div className="mt-8 pt-6 border-t border-[#4ade80]/30 text-center">
+                    <p className="text-sm text-gray-400 mb-2">{t({ JP: 'マザーベジタブルファクトリーによる吸収', EN: 'Absorption by Mother Vegetable Factory' })}</p>
+                    <div className="text-3xl font-bold text-[#4ade80]">CARBON OFFSET</div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
