@@ -36,8 +36,8 @@ export default function ProjectOverview() {
         <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto mb-20">
           {/* Card 1 */}
           <div className="group relative bg-gray-900/40 backdrop-blur-sm border border-gray-800 rounded-2xl p-8 md:p-12 hover:border-[#4ade80]/50 transition-all duration-500 overflow-hidden">
-            <div className="absolute top-0 right-0 p-8 opacity-10 group-hover:opacity-20 transition-opacity">
-              <span className="text-8xl font-bold text-[#4ade80]">01</span>
+            <div className="absolute top-0 right-0 p-6 opacity-30 group-hover:opacity-50 transition-opacity">
+              <span className="text-8xl font-black text-transparent bg-clip-text bg-gradient-to-br from-[#4ade80] to-transparent stroke-white stroke-2" style={{ WebkitTextStroke: '1px rgba(74, 222, 128, 0.3)' }}>01</span>
             </div>
             
             <h3 className="text-2xl md:text-3xl font-bold text-white mb-6 relative z-10">
@@ -67,8 +67,8 @@ export default function ProjectOverview() {
 
           {/* Card 2 */}
           <div className="group relative bg-gray-900/40 backdrop-blur-sm border border-gray-800 rounded-2xl p-8 md:p-12 hover:border-[#4ade80]/50 transition-all duration-500 overflow-hidden">
-            <div className="absolute top-0 right-0 p-8 opacity-10 group-hover:opacity-20 transition-opacity">
-              <span className="text-8xl font-bold text-[#4ade80]">02</span>
+            <div className="absolute top-0 right-0 p-6 opacity-30 group-hover:opacity-50 transition-opacity">
+              <span className="text-8xl font-black text-transparent bg-clip-text bg-gradient-to-br from-[#4ade80] to-transparent stroke-white stroke-2" style={{ WebkitTextStroke: '1px rgba(74, 222, 128, 0.3)' }}>02</span>
             </div>
             
             <h3 className="text-2xl md:text-3xl font-bold text-white mb-6 relative z-10">
@@ -98,8 +98,11 @@ export default function ProjectOverview() {
         </div>
 
         {/* Carbon Neutral Athlete Section */}
-        <div className="max-w-6xl mx-auto bg-gradient-to-br from-gray-900 to-black border border-[#4ade80]/30 rounded-3xl p-8 md:p-16 relative overflow-hidden">
+        <div className="max-w-6xl mx-auto bg-gradient-to-br from-gray-900 to-black border border-[#4ade80]/30 rounded-3xl p-8 md:p-16 relative overflow-hidden group">
           <div className="absolute top-0 right-0 w-64 h-64 bg-[#4ade80]/10 rounded-full blur-3xl -mr-32 -mt-32"></div>
+          <div className="absolute top-0 right-0 p-8 opacity-30 group-hover:opacity-50 transition-opacity">
+            <span className="text-9xl font-black text-transparent bg-clip-text bg-gradient-to-br from-[#4ade80] to-transparent stroke-white stroke-2" style={{ WebkitTextStroke: '1px rgba(74, 222, 128, 0.3)' }}>03</span>
+          </div>
           
           <div className="relative z-10">
             <div className="flex flex-col md:flex-row items-start md:items-center justify-between mb-12 gap-6">
