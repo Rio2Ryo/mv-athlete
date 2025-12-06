@@ -22,10 +22,7 @@ export default function Header() {
 
   const navItems = [
     { id: 'about', label: { JP: 'プロジェクト概要', EN: 'About' } },
-    { id: 'industry', label: { JP: '産業アプローチ', EN: 'Industry' } },
-    { id: 'team', label: { JP: 'チーム', EN: 'Team' } },
-    { id: 'partners', label: { JP: 'パートナー', EN: 'Partners' } },
-    { id: 'token', label: { JP: 'トークン情報', EN: 'Token Info' } },
+    { id: 'team', label: { JP: '支援アスリート', EN: 'Athletes' } },
   ];
 
   const scrollToSection = (id: string) => {
@@ -73,12 +70,6 @@ export default function Header() {
             <Globe className="h-4 w-4" />
             {language}
           </Button>
-          
-          <Button 
-            className="bg-[#4ade80] text-black hover:bg-[#22c55e] font-bold rounded-full px-6"
-          >
-            {t({ JP: 'ホワイトペーパー', EN: 'Whitepaper' })}
-          </Button>
         </nav>
 
         {/* Mobile Menu Button */}
@@ -113,11 +104,6 @@ export default function Header() {
               {t(item.label)}
             </button>
           ))}
-          <Button 
-            className="bg-[#4ade80] text-black hover:bg-[#22c55e] font-bold rounded-full w-full mt-4 py-6"
-          >
-            {t({ JP: 'ホワイトペーパー', EN: 'Whitepaper' })}
-          </Button>
         </div>
       )}
     </header>
