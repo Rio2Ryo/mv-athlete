@@ -134,65 +134,39 @@ export default function ProjectOverview() {
             </div>
             
             <div className="relative z-10">
-              <div className="flex flex-col md:flex-row items-start md:items-center justify-between mb-12 gap-6">
-                <div>
-                  <h3 className="text-3xl md:text-4xl font-bold text-white mb-2">
-                    {t({ JP: 'カーボンニュートラル・アスリート', EN: 'Carbon Neutral Athlete' })}
-                  </h3>
-                  <p className="text-[#4ade80] font-bold text-lg">
-                    {t({ JP: '呼吸するたびに、地球を救う。', EN: 'Save the Earth with every breath.' })}
-                  </p>
-                </div>
-                {/* Badge removed as requested */}
+              <div className="mb-12">
+                <h3 className="text-3xl md:text-4xl font-bold text-white mb-2">
+                  {t({ JP: 'カーボンニュートラル・アスリート', EN: 'Carbon Neutral Athlete' })}
+                </h3>
+                <p className="text-[#4ade80] font-bold text-lg">
+                  {t({ JP: '呼吸するたびに、未来を守る。', EN: 'Protecting the future with every breath.' })}
+                </p>
               </div>
 
               <div className="grid md:grid-cols-2 gap-12 items-center">
                 <div className="space-y-6 text-gray-300 leading-relaxed">
                   <p>
                     {t({
-                      JP: '人間は安静時でも1時間あたり約15〜20リットルのCO2を排出します。激しい運動を行うアスリートの場合、その排出量は安静時の数倍から10倍以上に増加し、1時間あたり100リットルを超えることもあります。',
-                      EN: 'Humans exhale about 15-20 liters of CO2 per hour even at rest. For athletes engaging in intense exercise, this emission can increase significantly, potentially exceeding 100 liters per hour.'
+                      JP: 'アスリートの活動が、地球環境への負荷ではなく、貢献になる新しい仕組み。「Small Earth Factory (SEF)」が、排出されるCO2を吸収し、酸素と栄養を生み出します。',
+                      EN: 'A new system where athlete activities become a contribution, not a burden, to the global environment. "Small Earth Factory (SEF)" absorbs emitted CO2 and generates oxygen and nutrition.'
                     })}
                   </p>
-                  <p>
-                    {t({
-                      JP: 'また、スタジアムで熱狂する観客も、応援と共に多くのCO2を排出しています。私たちは、この「避けられない排出」を「価値ある貢献」に変えます。',
-                      EN: 'Spectators cheering in stadiums also emit large amounts of CO2. We turn this "unavoidable emission" into a "valuable contribution".'
-                    })}
-                  </p>
-                  <p>
-                    {t({
-                      JP: 'アスリートが「Small Earth Factory (SEF)」を持つことで、自身の排出するCO2を吸収・還元し、カーボンクレジットを生み出します。パフォーマンスの向上が、そのまま地球環境への貢献となる新しいモデルです。',
-                      EN: 'By owning a "Small Earth Factory (SEF)", athletes absorb and offset their CO2 emissions, creating carbon credits. It is a new model where improving performance directly contributes to the global environment.'
-                    })}
-                  </p>
+                  <ul className="space-y-4 mt-6">
+                    {[
+                      { JP: '環境貢献型アスリート活動', EN: 'Eco-Contribution Athlete Activity' },
+                      { JP: 'CO2吸収と酸素生成', EN: 'CO2 Absorption & Oxygen Generation' },
+                      { JP: '持続可能なスポーツ界の実現', EN: 'Realizing Sustainable Sports' }
+                    ].map((item, i) => (
+                      <li key={i} className="flex items-center gap-3 text-gray-300">
+                        <div className="w-2 h-2 rounded-full bg-[#4ade80]"></div>
+                        <span>{t(item)}</span>
+                      </li>
+                    ))}
+                  </ul>
                 </div>
-
-                <div className="bg-black/50 rounded-2xl p-8 border border-gray-800">
-                  <h4 className="text-xl font-bold text-white mb-6 text-center">
-                    {t({ JP: 'CO2排出と吸収のサイクル', EN: 'Cycle of CO2 Emission & Absorption' })}
-                  </h4>
-                  <div className="space-y-6">
-                    <div className="flex items-center justify-between">
-                      <span className="text-gray-400">{t({ JP: '安静時の呼吸', EN: 'Resting Breath' })}</span>
-                      <span className="text-white font-mono text-xl">~15-20 L/h</span>
-                    </div>
-                    <div className="w-full h-px bg-gray-800"></div>
-                    <div className="flex items-center justify-between">
-                      <span className="text-gray-400">{t({ JP: 'アスリートの活動', EN: 'Athlete Activity' })}</span>
-                      <span className="text-[#4ade80] font-mono text-xl font-bold">100+ L/h</span>
-                    </div>
-                    <div className="w-full h-px bg-gray-800"></div>
-                    <div className="flex items-center justify-between">
-                      <span className="text-gray-400">{t({ JP: 'スタジアムの熱狂', EN: 'Stadium Excitement' })}</span>
-                      <span className="text-[#4ade80] font-mono text-xl font-bold">Massive Emission</span>
-                    </div>
-                    
-                    <div className="mt-8 pt-6 border-t border-[#4ade80]/30 text-center">
-                      <p className="text-sm text-gray-400 mb-2">{t({ JP: 'Small Earth Factory (SEF) による吸収', EN: 'Absorption by Small Earth Factory (SEF)' })}</p>
-                      <div className="text-3xl font-bold text-[#4ade80]">CARBON OFFSET</div>
-                    </div>
-                  </div>
+                <div className="hidden md:block bg-black/50 rounded-2xl p-8 border border-gray-800 h-full flex items-center justify-center">
+                   {/* Placeholder for future image/graphic */}
+                   <div className="text-gray-600 text-sm">{t({ JP: 'イメージエリア', EN: 'Image Area' })}</div>
                 </div>
               </div>
             </div>
