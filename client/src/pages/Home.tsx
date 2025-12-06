@@ -1,10 +1,7 @@
 import Header from '@/components/Header';
 import Hero from '@/components/Hero';
 import ProjectOverview from '@/components/ProjectOverview';
-import IndustryApproach from '@/components/IndustryApproach';
 import AthleteRoster from '@/components/AthleteRoster';
-import Partners from '@/components/Partners';
-import TokenInfo from '@/components/TokenInfo';
 import Footer from '@/components/Footer';
 import { LanguageProvider } from '@/contexts/LanguageContext';
 
@@ -16,10 +13,7 @@ export default function Home() {
         <main>
           <Hero />
           <ProjectOverview />
-          <IndustryApproach />
           <AthleteRoster />
-          <TokenInfo />
-          <Partners />
         </main>
         <Footer />
         

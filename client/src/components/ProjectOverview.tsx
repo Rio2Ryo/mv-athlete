@@ -14,20 +14,20 @@ export default function ProjectOverview() {
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto text-center mb-20">
           <h2 className="text-3xl md:text-5xl font-bold text-white mb-8">
-            {t({ JP: 'Two Only Ones', EN: 'Two Only Ones' })}
+            {t({ JP: 'アスリートへの約束', EN: 'Promise to Athletes' })}
           </h2>
           
           <div className="space-y-8 text-lg md:text-xl text-gray-300 leading-relaxed">
             <p>
               {t({
-                JP: 'マザーベジタブルプロジェクトは、2つの唯一無二の事業を軸に、地球とすべての生命の再生を目指す世界で唯一のプロジェクトです。',
-                EN: 'The MOTHER VEGETABLE PROJECT is the world\'s only project that aims to restore the Earth and all life, centered around two one-of-a-kind businesses.'
+                JP: 'マザーベジタブルアスリートファンデーションは、アスリートの「現在」と「未来」の両方を支援します。',
+                EN: 'The Mother Vegetable Athlete Foundation supports both the "present" and "future" of athletes.'
               })}
             </p>
             <p>
               {t({
-                JP: 'その過程で、各施設は24時間365日CO2を吸収し酸素を生成することで大気を浄化し、同時にマザーベジタブル製品と持続可能な経済的支援を通じて人々の健康に貢献します。',
-                EN: 'In this process, each facility purifies the atmosphere by absorbing CO2 and generating oxygen 24 hours a day, 365 days a year, while simultaneously contributing to improving people\'s health through Mother Vegetable products and sustainable financial support.'
+                JP: '現役時代のパフォーマンス向上から、引退後のセカンドキャリア、そして故郷への貢献まで。私たちはアスリートと共に歩み続けます。',
+                EN: 'From improving performance during their active career to supporting their second career after retirement and contributing to their hometowns. We walk together with athletes.'
               })}
             </p>
           </div>
@@ -41,21 +41,21 @@ export default function ProjectOverview() {
             </div>
             
             <h3 className="text-2xl md:text-3xl font-bold text-white mb-6 relative z-10">
-              {t({ JP: 'マザーベジタブル（栄養）', EN: 'Mother Vegetable (Nutrition)' })}
+              {t({ JP: '究極のコンディショニング', EN: 'Ultimate Conditioning' })}
             </h3>
             
             <p className="text-gray-400 leading-relaxed mb-8 relative z-10">
               {t({
-                JP: '人類に必要な48種類の栄養素をすべて提供する、単一の生命体由来の食品。健康、免疫力、そして持続的なパフォーマンスのために最適化されています。',
-                EN: 'Food derived from a single life form that provides all 48 nutrients essential for humanity. Optimized for health, immunity, and continuous performance.'
+                JP: '35億年前の生命力を持つ「マザーベジタブル」をプロ用・アスリート用として提供。48種類の必須栄養素が、日々の激しいトレーニングからの回復と、試合での最高のパフォーマンスを支えます。',
+                EN: 'Providing "Mother Vegetable" with 3.5 billion years of vitality for professional use. 48 essential nutrients support recovery from intense daily training and peak performance in matches.'
               })}
             </p>
             
             <ul className="space-y-4 relative z-10">
               {[
-                { JP: '48種類の必須栄養素', EN: '48 Essential Nutrients' },
-                { JP: '腸内環境の最適化', EN: 'Gut Health Optimization' },
-                { JP: '持続的な回復力', EN: 'Continuous Recovery' }
+                { JP: 'プロ専用製品の提供', EN: 'Exclusive Pro Products' },
+                { JP: '圧倒的な回復力', EN: 'Overwhelming Recovery' },
+                { JP: '怪我に強い体づくり', EN: 'Injury-Resistant Body' }
               ].map((item, i) => (
                 <li key={i} className="flex items-center gap-3 text-gray-300">
                   <div className="w-2 h-2 rounded-full bg-[#4ade80]"></div>
@@ -72,21 +72,21 @@ export default function ProjectOverview() {
             </div>
             
             <h3 className="text-2xl md:text-3xl font-bold text-white mb-6 relative z-10">
-              {t({ JP: 'スモールアースファクトリー (SEF)', EN: 'Small Earth Factory (SEF)' })}
+              {t({ JP: '持続可能な未来への支援', EN: 'Support for a Sustainable Future' })}
             </h3>
             
             <p className="text-gray-400 leading-relaxed mb-8 relative z-10">
               {t({
-                JP: 'CO2吸収（天然杉の700倍）を通じて小さな地球を再現。カーボンクレジットと製品販売からの収益が、持続可能な未来を支えます。',
-                EN: 'Recreating a small Earth through CO2 absorption (700 times that of natural cedar). Revenue from carbon credits and product sales supports a sustainable future.'
+                JP: '活動資金の支援に加え、故郷やゆかりの地に「Small Earth Factory」を設立する権利を提供。工場の収益の一部がアスリートに還元され、引退後の安定した収入源と地域貢献を実現します。',
+                EN: 'In addition to funding activities, we offer the right to establish a "Small Earth Factory" in your hometown. A portion of the factory\'s profits is returned to the athlete, ensuring a stable income source after retirement and community contribution.'
               })}
             </p>
             
             <ul className="space-y-4 relative z-10">
               {[
-                { JP: '経済的支援', EN: 'Financial Support' },
-                { JP: '工場の所有権', EN: 'Factory Ownership' },
-                { JP: '地域への貢献', EN: 'Community Legacy' }
+                { JP: '活動資金の提供', EN: 'Activity Funding' },
+                { JP: '工場オーナー権', EN: 'Factory Ownership' },
+                { JP: '地域への利益還元', EN: 'Community Profit Sharing' }
               ].map((item, i) => (
                 <li key={i} className="flex items-center gap-3 text-gray-300">
                   <div className="w-2 h-2 rounded-full bg-[#4ade80]"></div>

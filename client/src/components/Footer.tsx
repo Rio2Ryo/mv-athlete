@@ -30,19 +30,10 @@ export default function Footer() {
             <span>Brazil</span>
             <span>Peru</span>
           </div>
-          
-          <div className="flex gap-8 text-gray-400 text-sm">
-            <a href="#" className="hover:text-[#4ade80] transition-colors">
-              {t({ JP: 'プライバシーポリシー', EN: 'Privacy Policy' })}
-            </a>
-            <a href="#" className="hover:text-[#4ade80] transition-colors">
-              {t({ JP: '利用規約', EN: 'Terms and Conditions' })}
-            </a>
-          </div>
         </div>
         
         <div className="text-center text-gray-600 text-xs">
-          © 2025 MOTHER VEGETABLE PROJECT. All rights reserved.
+          © 2025 MOTHER VEGETABLE ATHLETE FOUNDATION. All rights reserved.
         </div>
       </div>
     </footer>

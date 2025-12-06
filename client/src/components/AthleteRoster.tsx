@@ -5,70 +5,59 @@ export default function AthleteRoster() {
 
   const athletes = [
     {
-      name: { JP: "アレックス・ジョンソン", EN: "Alex Johnson" },
-      sport: { JP: "トライアスロン", EN: "Triathlon" },
-      title: { JP: "プロトライアスリート", EN: "Professional Triathlete" },
+      name: { JP: "田中 健太", EN: "Kenta Tanaka" },
+      sport: { JP: "陸上競技", EN: "Track & Field" },
+      title: { JP: "プロスプリンター", EN: "Pro Sprinter" },
       description: {
-        JP: "マザーベジタブル製品を使用することで、週30時間のトレーニング中も最高の持久力と回復力を維持できています。継続的な栄養補給により、シーズン中盤の疲労が解消されました。",
-        EN: "Using Mother Vegetable products to maintain peak endurance and recovery during 30-hour training weeks. The continuous nutrient supply has eliminated my mid-season fatigue."
+        JP: "マザーベジタブルの栄養補給により、激しいトレーニング後の回復速度が劇的に向上しました。シーズンを通して最高のパフォーマンスを維持できています。",
+        EN: "Mother Vegetable's nutrition has dramatically improved my recovery speed after intense training. I can maintain peak performance throughout the season."
       },
-      image: "/images/athlete-1.jpg", // Placeholder, will use fallback
-      achievement: { JP: "アイアンマン世界選手権出場", EN: "Ironman World Championship Qualifier" }
+      image: "/images/athlete-jp-m.png",
+      achievement: { JP: "日本選手権 優勝", EN: "National Champion" }
     },
     {
-      name: { JP: "サラ・ウィリアムズ", EN: "Sarah Williams" },
+      name: { JP: "佐藤 美咲", EN: "Misaki Sato" },
       sport: { JP: "水泳", EN: "Swimming" },
       title: { JP: "オリンピック競泳選手", EN: "Olympic Swimmer" },
       description: {
-        JP: "水泳選手にとって腸内環境は極めて重要です。Achieveプログラムを開始して以来、免疫力が大幅に向上し、冬場でも体調を崩すことなくトレーニングを継続できています。",
-        EN: "Gut health is critical for swimmers. Since starting the Achieve program, my immunity has improved significantly, allowing me to train through the winter without illness."
+        JP: "腸内環境の改善が免疫力向上に直結し、体調を崩すことなくトレーニングに集中できています。アスリートとしての寿命が延びたと感じています。",
+        EN: "Improving my gut health directly boosted my immunity, allowing me to focus on training without getting sick. I feel my athletic career has been extended."
       },
-      image: "/images/athlete-2.jpg",
-      achievement: { JP: "全国選手権 金メダリスト", EN: "Gold Medalist, National Championships" }
+      image: "/images/athlete-jp-f.png",
+      achievement: { JP: "アジア大会 金メダリスト", EN: "Asian Games Gold Medalist" }
     },
     {
-      name: { JP: "マイケル・チェン", EN: "Michael Chen" },
-      sport: { JP: "陸上競技", EN: "Track & Field" },
-      title: { JP: "短距離走者", EN: "Sprinter" },
+      name: { JP: "マーカス・ジョンソン", EN: "Marcus Johnson" },
+      sport: { JP: "バスケットボール", EN: "Basketball" },
+      title: { JP: "プロバスケットボール選手", EN: "Pro Basketball Player" },
       description: {
-        JP: "48種類の栄養素が持つ抗炎症作用により、爆発的なスプリントセッション後の筋肉の回復が早まりました。ライバルよりも早くトラックに戻ることができます。",
-        EN: "The anti-inflammatory properties of the 48 nutrients help my muscles recover faster after explosive sprint sessions. I'm back on the track sooner than my competitors."
+        JP: "試合中のスタミナと集中力が格段に上がりました。マザーベジタブルは私のキャリアにとって欠かせないパートナーです。",
+        EN: "My stamina and focus during games have improved significantly. Mother Vegetable is an indispensable partner for my career."
       },
-      image: "/images/athlete-3.jpg",
-      achievement: { JP: "アジア大会 ファイナリスト", EN: "Asian Games Finalist" }
+      image: "/images/athlete-intl-m1.png",
+      achievement: { JP: "リーグMVP", EN: "League MVP" }
     },
     {
-      name: { JP: "エレナ・ロドリゲス", EN: "Elena Rodriguez" },
+      name: { JP: "エマ・ウィリアムズ", EN: "Emma Williams" },
       sport: { JP: "テニス", EN: "Tennis" },
       title: { JP: "プロテニスプレーヤー", EN: "Pro Tennis Player" },
       description: {
-        JP: "移動とストレスで消化器系がボロボロでしたが、マザーベジタブルがバランスを取り戻してくれました。MVPコインのスポンサーシップにより、経済的な自由を得てプレーに集中できています。",
-        EN: "Travel and stress used to wreck my digestion. Mother Vegetable restored my balance, and the MVP Coin sponsorship gives me the financial freedom to focus on my game."
+        JP: "世界中を転戦する中で、安定した栄養摂取ができるのは大きな強みです。コンディションの波がなくなりました。",
+        EN: "Being able to get consistent nutrition while traveling around the world is a huge advantage. My condition has become much more stable."
       },
-      image: "/images/athlete-4.jpg",
-      achievement: { JP: "WTAランキング トップ100", EN: "Top 100 WTA Ranking" }
+      image: "/images/athlete-intl-f1.png",
+      achievement: { JP: "グランドスラム ベスト8", EN: "Grand Slam Quarterfinalist" }
     },
     {
-      name: { JP: "デビッド・キム", EN: "David Kim" },
+      name: { JP: "カルロス・ロドリゲス", EN: "Carlos Rodriguez" },
       sport: { JP: "サッカー", EN: "Soccer" },
       title: { JP: "ミッドフィールダー", EN: "Midfielder" },
       description: {
-        JP: "故郷にスモールアースファクトリーを設立することは夢でした。フィールドでのキャリアを支えながら、地域社会にレガシーを築いています。",
-        EN: "Establishing a Small Earth Factory in my hometown was a dream come true. I'm building a legacy for my community while fueling my career on the field."
+        JP: "故郷に工場を作るという夢をサポートしてもらえることに感謝しています。プレーで恩返しをしたいです。",
+        EN: "I am grateful for the support in realizing my dream of building a factory in my hometown. I want to give back through my play."
       },
-      image: "/images/athlete-5.jpg",
-      achievement: { JP: "2024年リーグMVP", EN: "League MVP 2024" }
-    },
-    {
-      name: { JP: "ジェシカ・リー", EN: "Jessica Lee" },
-      sport: { JP: "体操", EN: "Gymnastics" },
-      title: { JP: "エリート体操選手", EN: "Elite Gymnast" },
-      description: {
-        JP: "正確さと集中力がすべてです。マザーベジタブルの栄養密度は、複雑なルーチン中の精神的な明晰さと身体的な安定性を支えてくれます。",
-        EN: "Precision and focus are everything. The nutrient density of Mother Vegetable supports my mental clarity and physical stability during complex routines."
-      },
-      image: "/images/athlete-6.jpg",
-      achievement: { JP: "ワールドカップ 銀メダリスト", EN: "World Cup Silver Medalist" }
+      image: "/images/athlete-intl-m2.png",
+      achievement: { JP: "代表チーム キャプテン", EN: "National Team Captain" }
     }
   ];
 
@@ -93,12 +82,11 @@ export default function AthleteRoster() {
               key={index}
               className="bg-gray-800/50 backdrop-blur-md border border-gray-700/50 rounded-xl overflow-hidden hover:border-[#4ade80]/50 transition-all duration-300 group"
             >
-              <div className="relative h-64 overflow-hidden bg-gray-700">
+              <div className="relative h-80 overflow-hidden bg-gray-700">
                 <img
                   src={athlete.image}
                   alt={t(athlete.name)}
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                  onError={(e) => e.currentTarget.src = `https://placehold.co/600x400/111111/FFFFFF?text=${t(athlete.name).split(' ')[0]}`}
+                  className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent opacity-80"></div>
                 <div className="absolute bottom-4 left-4 right-4">
