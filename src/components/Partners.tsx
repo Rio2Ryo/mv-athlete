@@ -8,14 +8,13 @@ export default function Partners() {
 
   const partnerCategories = [
     {
-      id: 'strategic',
-      title: { JP: '戦略的パートナー', EN: 'Strategic Partners' },
+      id: 'international',
+      title: { JP: '国際的パートナー', EN: 'International Partners' },
       isOpen: true,
       partners: [
-        { name: { JP: '西安', EN: "Xi'an" }, type: { JP: '都市パートナー', EN: 'City Partner' } },
-        { name: { JP: 'マレーシア', EN: 'Malaysia' }, type: { JP: '政府・産業パートナー', EN: 'Gov/Industry Partner' } },
+        { name: { JP: 'ASEAN', EN: 'ASEAN' }, type: { JP: '地域協力', EN: 'Regional Cooperation' } },
+        { name: { JP: 'マレーシア政府', EN: 'Government of Malaysia' }, type: { JP: '政府機関', EN: 'Government Agency' } },
         { name: { JP: 'シンガポール', EN: 'Singapore' }, type: { JP: '戦略ハブ', EN: 'Strategic Hub' } },
-        { name: { JP: 'ASEANネットワーク', EN: 'ASEAN Network' }, type: { JP: '地域展開', EN: 'Regional Expansion' } },
       ]
     },
     {
