@@ -139,7 +139,7 @@ export default function ProjectOverview() {
                   {t({ JP: 'カーボンニュートラル・アスリート', EN: 'Carbon Neutral Athlete' })}
                 </h3>
                 <p className="text-[#4ade80] font-bold text-lg">
-                  {t({ JP: '呼吸するたびに、未来を守る。', EN: 'Protecting the future with every breath.' })}
+                  {t({ JP: '呼吸するたびに、地球を汚さない。', EN: 'Not polluting the earth with every breath.' })}
                 </p>
               </div>
 
@@ -147,15 +147,15 @@ export default function ProjectOverview() {
                 <div className="space-y-6 text-gray-300 leading-relaxed">
                   <p>
                     {t({
-                      JP: 'アスリートの活動が、地球環境への負荷ではなく、貢献になる新しい仕組み。「Small Earth Factory (SEF)」が、排出されるCO2を吸収し、酸素と栄養を生み出します。',
-                      EN: 'A new system where athlete activities become a contribution, not a burden, to the global environment. "Small Earth Factory (SEF)" absorbs emitted CO2 and generates oxygen and nutrition.'
+                      JP: 'アスリートが活動することで排出されるCO2を、ただ排出するだけでなく、自らの手でオフセットする。「Small Earth Factory (SEF)」を持つことで、呼吸による負荷を吸収し、実質的な環境負荷をゼロに近づける。地球を救うという大げさなことではなく、まずは自分が出したものを自分で還す、責任あるアスリートの新しいスタンダード。',
+                      EN: 'A new standard for responsible athletes: not just emitting CO2 through activities, but offsetting it with their own hands. By owning a "Small Earth Factory (SEF)", they absorb the burden of their breath and bring their environmental impact close to net zero. It\'s not about saving the earth, but about returning what you emit.'
                     })}
                   </p>
                   <ul className="space-y-4 mt-6">
                     {[
-                      { JP: '環境貢献型アスリート活動', EN: 'Eco-Contribution Athlete Activity' },
-                      { JP: 'CO2吸収と酸素生成', EN: 'CO2 Absorption & Oxygen Generation' },
-                      { JP: '持続可能なスポーツ界の実現', EN: 'Realizing Sustainable Sports' }
+                      { JP: '排出CO2の自己吸収・オフセット', EN: 'Self-Absorption & Offset of Emitted CO2' },
+                      { JP: '環境負荷実質ゼロへの責任', EN: 'Responsibility for Net Zero Impact' },
+                      { JP: '熱狂をクリーンエネルギーへ', EN: 'Turning Enthusiasm into Clean Energy' }
                     ].map((item, i) => (
                       <li key={i} className="flex items-center gap-3 text-gray-300">
                         <div className="w-2 h-2 rounded-full bg-[#4ade80]"></div>
