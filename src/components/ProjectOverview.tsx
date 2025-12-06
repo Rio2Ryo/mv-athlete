@@ -42,9 +42,14 @@ export default function ProjectOverview() {
             </div>
             
             <div className="relative z-10">
-              <h3 className="text-3xl md:text-4xl font-bold text-white mb-6">
-                {t({ JP: '究極のコンディショニング', EN: 'Ultimate Conditioning' })}
-              </h3>
+              <div className="mb-12">
+                <h3 className="text-3xl md:text-4xl font-bold text-white mb-2">
+                  {t({ JP: '究極のコンディショニング', EN: 'Ultimate Conditioning' })}
+                </h3>
+                <p className="text-[#4ade80] font-bold text-lg">
+                  {t({ JP: '35億年の生命力が、あなたの力を覚醒させる。', EN: '3.5 billion years of vitality awakens your power.' })}
+                </p>
+              </div>
               
               <div className="grid md:grid-cols-2 gap-12 items-center">
                 <div className="space-y-6 text-gray-300 leading-relaxed">
@@ -83,9 +88,14 @@ export default function ProjectOverview() {
             </div>
             
             <div className="relative z-10">
-              <h3 className="text-3xl md:text-4xl font-bold text-white mb-6">
-                {t({ JP: '持続可能な未来への支援', EN: 'Support for a Sustainable Future' })}
-              </h3>
+              <div className="mb-12">
+                <h3 className="text-3xl md:text-4xl font-bold text-white mb-2">
+                  {t({ JP: '持続可能な未来への支援', EN: 'Support for a Sustainable Future' })}
+                </h3>
+                <p className="text-[#4ade80] font-bold text-lg">
+                  {t({ JP: '引退後も輝く、新たなステージを共に。', EN: 'Shining after retirement, together on a new stage.' })}
+                </p>
+              </div>
               
               <div className="grid md:grid-cols-2 gap-12 items-center">
                 <div className="space-y-6 text-gray-300 leading-relaxed">
