@@ -53,7 +53,7 @@ export default function Hero() {
             <img
               src="/mazavege_logo_midori.png"
               alt="Mother Vegetable Logo"
-              className="mx-auto w-24 h-24 sm:w-32 sm:h-32 md:w-36 md:h-36 object-contain"
+              className="mx-auto w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 object-contain"
             />
           </div>
 
@@ -68,7 +68,7 @@ export default function Hero() {
             }}
           >
             <h1 className="text-xl sm:text-2xl md:text-4xl lg:text-5xl font-semibold leading-tight">
-              <div>MOTHER VEGETABLE PROJECT</div>
+              <div>MOTHER VEGETABLE FOUNDATION</div>
             </h1>
           </div>
 

@@ -44,15 +44,12 @@ export default function Header() {
     >
       <div className="container mx-auto px-4 flex justify-between items-center">
         {/* Logo */}
-        <div className="flex items-center gap-2 cursor-pointer" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
+        <div className="flex items-center cursor-pointer" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
           <img 
-            src="/mazavege_logo_midori.png" 
-            alt="Logo" 
-            className="h-10 w-10 object-contain" 
+            src="/mazavege_white.png" 
+            alt="MOTHER VEGETABLE" 
+            className="h-8 md:h-10 w-auto object-contain" 
           />
-          <span className="font-bold text-xl tracking-wider text-white hidden sm:block">
-            MOTHER VEGETABLE
-          </span>
         </div>
 
         {/* Desktop Navigation */}
