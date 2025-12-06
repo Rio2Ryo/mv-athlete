@@ -44,7 +44,7 @@ export default function Partners() {
     {
       id: 'academic',
       title: { JP: '学術・研究機関', EN: 'Academic & Research Institutions' },
-      isOpen: true,
+      isOpen: false,
       partners: [
         { 
           name: { JP: 'ノッティンガム大学', EN: 'University of Nottingham' }, 
@@ -78,13 +78,34 @@ export default function Partners() {
     {
       id: 'industry',
       title: { JP: '産業パートナー', EN: 'Industrial Partners' },
-      isOpen: false,
+      isOpen: true,
       partners: [
         { 
-          name: { JP: 'Coming Soon', EN: 'Coming Soon' }, 
-          type: { JP: '産業連携', EN: 'Industry Alliance' }, 
-          description: { JP: '', EN: '' }, 
-          logo: null 
+          name: { JP: 'Algae International Berhad', EN: 'Algae International Berhad' }, 
+          type: { JP: '技術開発パートナー', EN: 'Technology Development Partner' }, 
+          description: { 
+            JP: '2006年から微細藻類技術開発に専念し、2008年に業界を変革する画期的な特許[WO2008105649A1]を取得。藻類バイオマス生産コストの劇的な削減を達成し、気候制御された透明な建物内での多層栽培システムを通じて、藻類と野菜の統合生産を可能にしました。', 
+            EN: 'Dedicated to microalgae technology development since 2006, obtained groundbreaking patent [WO2008105649A1] that transformed the industry in 2008. Achieved dramatic reduction in algae biomass production costs and enabled integrated production of algae and vegetables through multi-layer cultivation systems in climate-controlled transparent buildings.' 
+          }, 
+          logo: '/images/algae_logo.jpg' 
+        },
+        { 
+          name: { JP: 'Revoganix Inc.', EN: 'Revoganix Inc.' }, 
+          type: { JP: '持続可能な農業アドバイザー', EN: 'Sustainable Agriculture Advisor' }, 
+          description: { 
+            JP: '持続可能な農業、水産養殖、微生物学における35年以上の専門知識を持ち、ASEAN事務局のチーフコンサルタントやスリランカ漁業大臣の公式アドバイザーを務めています。アジア全域での有機農業開発と革新的な水産養殖システムにおける豊富な経験により、貴重な地域的専門知識と政府関係を提供しています。', 
+            EN: 'With over 35 years of expertise in sustainable agriculture, aquaculture, and microbiology, serving as Chief Consultant to the ASEAN Secretariat and Official Advisor to Sri Lanka\'s Minister of Fisheries. Extensive experience in organic farming development and innovative aquaculture systems across Asia provides valuable regional expertise and government relationships.' 
+          }, 
+          logo: '/images/revoganix_logo.png' 
+        },
+        { 
+          name: { JP: 'Invest Selangor', EN: 'Invest Selangor' }, 
+          type: { JP: '政府機関', EN: 'Government Agency' }, 
+          description: { 
+            JP: 'セランゴール州政府が提供する優遇支援エコシステムの一員として、効率的な行政プロセス、カスタマイズされたインセンティブパッケージ、業界特化型プログラム、ネットワークとインフラへのアクセスを提供し、マレーシアで最も経済的に活発な州の一つでのプロジェクト成功を促進することを目指しています。', 
+            EN: 'Member of the preferential support ecosystem provided by the Selangor State Government, including efficient administrative processes, customized incentive packages, industry-specific programs, and access to networks and infrastructure, aiming to promote project success in one of Malaysia\'s most economically active states.' 
+          }, 
+          logo: '/images/invest_selangor_logo.png' 
         }
       ]
     }
