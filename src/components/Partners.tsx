@@ -44,7 +44,7 @@ export default function Partners() {
           type: { JP: '政府機関', EN: 'Government Agency' }, 
           description: { 
             JP: 'セランゴール州政府が提供する優遇支援エコシステムの一員として、効率的な行政プロセス、カスタマイズされたインセンティブパッケージ、業界特化型プログラム、ネットワークとインフラへのアクセスを提供し、マレーシアで最も経済的に活発な州の一つでのプロジェクト成功を促進することを目指しています。', 
-            EN: 'Member of the preferential support ecosystem provided by the Selangor State Government, including efficient administrative processes, customized incentive packages, industry-specific programs, and access to networks and infrastructure, aiming to promote project success in one of Malaysia\'s most economically active states.' 
+            EN: 'Member of the preferential support ecosystem provided by the Selangor State Government, including efficient administrative processes, customized incentive packages, industry-specific programs, and access to networks and infrastructure, aiming to promote project success in one of Malaysia\'s most economically active states.'
           }, 
           logo: '/images/invest_selangor_logo.png' 
         },
