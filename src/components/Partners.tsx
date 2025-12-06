@@ -44,13 +44,34 @@ export default function Partners() {
     {
       id: 'academic',
       title: { JP: '学術・研究機関', EN: 'Academic & Research Institutions' },
-      isOpen: false,
+      isOpen: true,
       partners: [
         { 
-          name: { JP: '大学機関', EN: 'Universities' }, 
+          name: { JP: 'ノッティンガム大学', EN: 'University of Nottingham' }, 
           type: { JP: '共同研究', EN: 'Joint Research' }, 
-          description: { JP: '', EN: '' }, 
-          logo: null 
+          description: { 
+            JP: '大学構内における3エーカーの施設をMother Vegetable事業に提供する戦略的協力体制を構築し、研究開発の発展のため尊敬されるバイオテクノロジーチームによるサポートを受けています。', 
+            EN: 'We have established a strategic cooperation system that provides 3 acres of facilities within the university campus for the Mother Vegetable business, supported by a respected biotechnology team for the advancement of research and development.' 
+          }, 
+          logo: '/images/nottingham_logo.png' 
+        },
+        { 
+          name: { JP: 'シンガポール国立大学', EN: 'National University of Singapore' }, 
+          type: { JP: '共同研究', EN: 'Joint Research' }, 
+          description: { 
+            JP: '農業や水産養殖、生物的防除剤、製品開発の分野において、科学的専門知識と革新を提供するパートナーシップを結んでいます。私たちの活動の基盤となる科学を強化し、イニシアチブが最先端の研究に基づいていることを確保することが重要です。彼らの支援を受けて、特に私たちの主力プロジェクトであるMother Vegetableプロジェクトを通じて、持続可能なソリューションの開発と商業化を加速することが可能になります。', 
+            EN: 'We partner to provide scientific expertise and innovation in agriculture, aquaculture, biocontrol agents, and product development. Strengthening the science behind our activities and ensuring our initiatives are based on cutting-edge research is crucial. With their support, we can accelerate the development and commercialization of sustainable solutions, especially through our flagship Mother Vegetable project.' 
+          }, 
+          logo: '/images/nus_logo.png' 
+        },
+        { 
+          name: { JP: 'マラヤ大学', EN: 'Universiti Malaya' }, 
+          type: { JP: '共同研究', EN: 'Joint Research' }, 
+          description: { 
+            JP: 'マレーシアの最高学府であるマラヤ大学と研究開発分野で連携しています。同大学の優れた学術的知見と科学技術の専門性により、私たちの技術革新が大きく前進しています。この産学連携を通じて、持続可能な発展と社会実装を目指した研究開発を共同で進めており、Mother Vegetableプロジェクトの科学的基盤を強化しています。', 
+            EN: 'We collaborate in R&D with Universiti Malaya, Malaysia\'s premier institution. Their academic excellence and scientific expertise significantly advance our technological innovation. Through this industry-academia collaboration, we jointly pursue R&D aimed at sustainable development and social implementation, strengthening the scientific foundation of the Mother Vegetable project.' 
+          }, 
+          logo: '/images/malaya_logo.png' 
         }
       ]
     },
