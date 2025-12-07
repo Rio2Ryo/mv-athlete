@@ -71,7 +71,7 @@ export default function Partners() {
     {
       id: 'academic',
       title: { JP: '学術・研究機関', EN: 'Academic & Research Institutions' },
-      isOpen: true,
+      isOpen: false,
       partners: [
         { 
           name: { JP: 'ノッティンガム大学', EN: 'University of Nottingham' }, 
@@ -139,27 +139,183 @@ export default function Partners() {
       ]
     },
     {
-      id: 'industry',
-      title: { JP: '産業パートナー', EN: 'Industrial Partners' },
-      isOpen: true,
+      id: 'jichitai',
+      title: { JP: '行政・地方自治体', EN: 'Administration & Local Governments' },
+      isOpen: false,
       partners: [
-        { 
-          name: { JP: 'Algae International Berhad', EN: 'Algae International Berhad' }, 
-          type: { JP: '技術開発パートナー', EN: 'Technology Development Partner' }, 
-          description: { 
-            JP: '2006年から微細藻類技術開発に専念し、2008年に業界を変革する画期的な特許[WO2008105649A1]を取得。藻類バイオマス生産コストの劇的な削減を達成し、気候制御された透明な建物内での多層栽培システムを通じて、藻類と野菜の統合生産を可能にしました。', 
-            EN: 'Dedicated to microalgae technology development since 2006, obtained groundbreaking patent [WO2008105649A1] that transformed the industry in 2008. Achieved dramatic reduction in algae biomass production costs and enabled integrated production of algae and vegetables through multi-layer cultivation systems in climate-controlled transparent buildings.' 
-          }, 
-          logo: '/images/algae_logo.jpg' 
+        {
+          name: { JP: '食品産業・商品・地域開発省（M-FICoRD）サラワク州', EN: 'Ministry of Food Industry, Commodity and Regional Development (M-FICoRD) Sarawak' },
+          type: { JP: '政府機関', EN: 'Government Agency' },
+          description: {
+            JP: '包括的な技術分析提案：サラワク州パダンアイ貯水池におけるテイラピア育成システム。地域の水資源を活用した持続可能な養殖モデルの確立と地域経済の活性化を目指しています。',
+            EN: 'Comprehensive technical analysis proposal: Tilapia farming system at Padang Ai Reservoir in Sarawak. Aiming to establish sustainable aquaculture models utilizing regional water resources and revitalize the local economy.'
+          },
+          logo: '/m-ficord.jpeg'
         },
-        { 
-          name: { JP: 'Revoganix Inc.', EN: 'Revoganix Inc.' }, 
-          type: { JP: '持続可能な農業アドバイザー', EN: 'Sustainable Agriculture Advisor' }, 
-          description: { 
-            JP: '持続可能な農業、水産養殖、微生物学における35年以上の専門知識を持ち、ASEAN事務局のチーフコンサルタントやスリランカ漁業大臣の公式アドバイザーを務めています。アジア全域での有機農業開発と革新的な水産養殖システムにおける豊富な経験により、貴重な地域的専門知識と政府関係を提供しています。', 
-            EN: 'With over 35 years of expertise in sustainable agriculture, aquaculture, and microbiology, serving as Chief Consultant to the ASEAN Secretariat and Official Advisor to Sri Lanka\'s Minister of Fisheries. Extensive experience in organic farming development and innovative aquaculture systems across Asia provides valuable regional expertise and government relationships.' 
-          }, 
-          logo: '/images/revoganix_logo.png' 
+        {
+          name: { JP: '河津町（日本）', EN: 'Kawazu Town (Japan)' },
+          type: { JP: '地方自治体', EN: 'Local Government' },
+          description: {
+            JP: '日本におけるMother Vegetableを核とした包括的な事業提携による海洋産業の振興。',
+            EN: 'Promotion of marine industry through comprehensive business partnerships centered on Mother Vegetable in Japan.'
+          },
+          logo: '/kawazu-town.jpeg'
+        },
+        {
+          name: { JP: '静岡県（日本）', EN: 'Shizuoka Prefecture (Japan)' },
+          type: { JP: '都道府県', EN: 'Prefecture' },
+          description: {
+            JP: '海洋産業発展および持続可能技術実装のための包括的な県レベル支援システムを提供しています。',
+            EN: 'Providing comprehensive prefectural-level support systems for marine industry development and sustainable technology implementation.'
+          },
+          logo: '/shizuoka-prefecture.jpeg'
+        },
+        {
+          name: { JP: '東京都板橋区（日本）', EN: 'Itabashi Ward, Tokyo (Japan)' },
+          type: { JP: '特別区', EN: 'Special Ward' },
+          description: {
+            JP: '海洋産業発展および持続可能技術実装のための包括的な県レベル支援システムを提供しています。',
+            EN: 'Providing comprehensive ward-level support systems for marine industry development and sustainable technology implementation.'
+          },
+          logo: '/itabashi-ward.jpeg'
+        },
+        {
+          name: { JP: '水産庁（日本）', EN: 'Fisheries Agency (Japan)' },
+          type: { JP: '政府機関', EN: 'Government Agency' },
+          description: {
+            JP: '日本における海洋産業の振興とMother Vegetableの導入支援',
+            EN: 'Supporting the promotion of marine industry and introduction of Mother Vegetable in Japan'
+          },
+          logo: '/fisheries-agency.jpeg'
+        }
+      ]
+    },{
+      id: 'other',
+      title: { JP: '国際機関', EN: 'International Organizations' },
+      isOpen: false,
+      partners: [
+        {
+          name: { JP: '東アジア経済研究所（ERIA）', EN: 'Economic Research Institute for ASEAN and East Asia (ERIA)' },
+          type: { JP: '研究機関', EN: 'Research Institution' },
+          description: {
+            JP: 'ASEAN持続可能農業に関する地域ガイドライン実施のための実践的行動計画および持続可能な農業食料システムに関する予備調査研究において協力しています。',
+            EN: 'Collaborating on practical action plans for implementing regional guidelines on ASEAN sustainable agriculture and preliminary research on sustainable agri-food systems.'
+          },
+          logo: '/eria.jpeg'
+        },
+        {
+          name: { JP: '日本-ASEAN統合基金', EN: 'Japan-ASEAN Integration Fund' },
+          type: { JP: '国際基金', EN: 'International Fund' },
+          description: {
+            JP: '水産養殖および畜産セクターにおける抗菌剤耐性（AMR）対策としての生物的防除剤（BCA）応用に関する実証プロジェクトへの支援を提供しています。',
+            EN: 'Providing support for demonstration projects on the application of biological control agents (BCA) as countermeasures against antimicrobial resistance (AMR) in aquaculture and livestock sectors.'
+          },
+          logo: '/jaif.jpeg'
+        }
+      ]
+    },{
+      id: 'other2',
+      title: { JP: 'その他の提携組織・プロジェクト', EN: 'Other Partner Organizations & Projects' },
+      isOpen: false,
+      partners: [
+        {
+          name: { JP: 'Revoganix（レヴォガニクス）', EN: 'Revoganix' },
+          type: { JP: 'ASEANパネル企業', EN: 'ASEAN Panel Company' },
+          description: {
+            JP: 'ASEANパネル企業として認められており、ASEAN持続可能な農業・水産養殖アカデミーの設立や地域のBCA（生物的防除剤）生産イニシアチブなど、ASEANから直接授与された複数の影響力の大きいプロジェクトを任されています。ASEAN以外では、Revoganixはサラワク州のコンサルタントを務め、タイ中央政府の水産養殖セクターと緊密に協力するなど、他の戦略的関与も行っています。この実績のある実績により、RevoganixはMother VegetableプロジェクトでASEANを支援し、提携できることを誇りに思い、地域全体のコミュニティに利益をもたらす農業と水産養殖のための堅牢で持続可能なモデルを構築するために、その専門知識とリーダーシップを貢献しています。',
+            EN: 'Recognized as an ASEAN panel company, entrusted with multiple high-impact projects directly awarded by ASEAN, including establishing the ASEAN Sustainable Agriculture and Aquaculture Academy and regional BCA production initiatives. Beyond ASEAN, Revoganix serves as a consultant to Sarawak State and works closely with Thailand\'s central government aquaculture sector. With this proven track record, Revoganix is proud to support and partner with ASEAN in the Mother Vegetable project, contributing its expertise and leadership to build robust and sustainable models for agriculture and aquaculture that benefit communities across the region.'
+          },
+          logo: '/revoganix.jpeg'
+        },
+        {
+          name: { JP: 'バイオエコノミーコーポレーション', EN: 'Bioeconomy Corporation' },
+          type: { JP: 'プロジェクトパートナー', EN: 'Project Partner' },
+          description: {
+            JP: '農業廃棄物をクリーンな食品に変えるプロジェクトエンゲージメント。持続可能なバイオエコノミーの推進と廃棄物の有効活用を通じた循環型経済の実現に取り組んでいます。',
+            EN: 'Project engagement in transforming agricultural waste into clean food. Working towards realizing a circular economy through promoting sustainable bioeconomy and effective utilization of waste.'
+          },
+          logo: '/bioeconomy.jpeg'
+        },
+        {
+          name: { JP: 'テマセクポリテクニック・水産養殖イノベーションセンター', EN: 'Temasek Polytechnic Aquaculture Innovation Centre' },
+          type: { JP: '研究機関', EN: 'Research Institution' },
+          description: {
+            JP: 'ティラピア飼料における生物的防除剤（BCA）の革新的な応用：オープンポンドタンク水産養殖における成長と耐病性の向上。最新の養殖技術と天然由来の防除剤を組み合わせた革新的な養殖システムの開発を推進しています。',
+            EN: 'Innovative application of biological control agents (BCA) in tilapia feed: Enhancing growth and disease resistance in open pond tank aquaculture. Promoting the development of innovative aquaculture systems combining cutting-edge farming technology with naturally-derived control agents.'
+          },
+          logo: '/temasek.jpeg'
+        },
+        {
+          name: { JP: 'Cropabl（マレーシア）', EN: 'Cropabl (Malaysia)' },
+          type: { JP: 'グリーンファーミングパートナー', EN: 'Green Farming Partner' },
+          description: {
+            JP: '20年以上にわたって非侵襲的かつ無化学物質の農業に取り組んできたパイオニア的企業であり、食料安全保障と持続可能な農業実践を推進するために政府機関との強力なパートナーシップを築いてきました。確立されたグリーンファーミング技術を活用し、現在はマレーシアのMOTHER VEGETABLEを支援し、モジュール型農業ソリューションの開発に協力しています。この取り組みの一環として、MOTHER VEGETABLEと緊密に連携し、ペラ州タンジョン・マリムにおいて10エーカー規模の旗艦プロジェクトを実施し、食料安全保障と環境保全に関する国家目標に沿った持続可能な食料生産のモデルを創出します',
+            EN: 'A pioneering company with over 20 years of commitment to non-invasive and chemical-free farming, building strong partnerships with government agencies to promote food security and sustainable agricultural practices. Leveraging established green farming technology, now supporting Malaysia\'s MOTHER VEGETABLE and collaborating on modular agricultural solutions development. As part of this initiative, working closely with MOTHER VEGETABLE to implement a 10-acre flagship project in Tanjung Malim, Perak, creating a sustainable food production model aligned with national goals for food security and environmental conservation.'
+          },
+          logo: '/cropabl.jpeg'
+        },
+        {
+          name: { JP: 'Sabah Invest', EN: 'Sabah Invest' },
+          type: { JP: '投資機関', EN: 'Investment Agency' },
+          description: {
+            JP: 'サバ州政府とのパートナーシップのもとでMOTHER VEGETABLEプロジェクトの実施を強力に支援する意向を示しています。この取り組みは、輸入食品への依存度が高いサバを、自給自足が可能で輸出余剰を生み出せる州へと変革することを目指しています。MOTHER VEGETABLEの先進的な持続可能農業技術を採用することで、このプロジェクトは食料安全保障を強化し、外部のサプライチェーンへの依存を減らし、サバを農業・食品生産の地域的リーダーへと押し上げます。この変革は、地域のレジリエンスを高めるだけでなく、輸出市場の開拓を通じて新たな経済的機会を創出し、州の長期的な繁栄と持続可能性に貢献します。',
+            EN: 'Expressing strong intention to support the implementation of the MOTHER VEGETABLE project in partnership with the Sabah State Government. This initiative aims to transform Sabah from high dependency on imported food to a self-sufficient state capable of generating export surplus. By adopting MOTHER VEGETABLE\' advanced sustainable farming technology, this project will strengthen food security, reduce dependence on external supply chains, and position Sabah as a regional leader in agriculture and food production. This transformation will not only enhance local resilience but also create new economic opportunities through export market development, contributing to the state\'s long-term prosperity and sustainability.'
+          },
+          logo: '/sabah-invest.jpeg'
+        },
+        {
+          name: { JP: 'Healcom Foundation', EN: 'Healcom Foundation' },
+          type: { JP: '財団', EN: 'Foundation' },
+          description: {
+            JP: 'MOTHER VEGETABLEの取り組みに賛同し、地域社会に最高品質で健康的かつ持続可能に栽培された食品を届ける可能性を高く評価しています。財団はその広範な会員ネットワークを通じて、認知度向上の推進、生産活動の支援、販売チャネルの強化に積極的に関与します。MOTHER VEGETABLEと提携することで、Healcom Foundationは公衆衛生と栄養改善という自身の使命を推進するだけでなく、地域産の無化学食品の持続可能な市場を創出し、消費者と地域社会全体に利益をもたらします。',
+            EN: 'Supporting the MOTHER VEGETABLE initiative and highly valuing its potential to deliver the highest quality, healthy, and sustainably grown food to local communities. Through its extensive member network, the foundation actively engages in raising awareness, supporting production activities, and strengthening sales channels. By partnering with MOTHER VEGETABLE, Healcom Foundation not only advances its own mission of public health and nutrition improvement but also creates a sustainable market for locally-produced chemical-free food, benefiting consumers and communities as a whole.'
+          },
+          logo: '/healcom.jpeg'
+        },
+        {
+          name: { JP: '黒井漁業協同組合', EN: 'Kuroi Fishery Cooperative' },
+          type: { JP: '漁業協同組合', EN: 'Fishery Cooperative' },
+          description: {
+            JP: '日本の下関市に位置する漁協組合：磯焼けによる空ウニの大量発生や養殖に対して課題を持っており、MOTHER VEGETABLEを活用することで局所的な磯焼け解決や効率的な養殖を進めている。',
+            EN: 'Fishery cooperative located in Shimonoseki City, Japan: Facing challenges with mass occurrence of empty sea urchins due to rocky shore denudation and aquaculture, advancing local rocky shore denudation solutions and efficient aquaculture using MOTHER VEGETABLE.'
+          },
+          logo: '/kuroi-fishery-DSW6ddl8.jpeg'
+        },
+        {
+          name: { JP: '日本PTA', EN: 'Japan PTA' },
+          type: { JP: '教育団体', EN: 'Educational Organization' },
+          description: {
+            JP: '日本では、小学生の保護者600万人がPTAに登録されています。保護者と教師の会プロジェクト：全国の選ばれた小学校でオリンピック選手とのイベントを開催し、子供たちがマザーベジタブルを体験し、栄養について学びます。これらのプログラムは、将来の研究者を育成し、学校給食の基準の改善を促すため、PTAから高く評価されています。',
+            EN: 'In Japan, 6 million parents of elementary school students are registered with the PTA. Parent-Teacher Association Project: Hosting events with Olympic athletes at selected elementary schools nationwide, where children experience Mother Vegetable and learn about nutrition. These programs are highly valued by the PTA for nurturing future researchers and promoting improvements in school meal standards.'
+          },
+          logo: '/pta.jpeg'
+        },
+        {
+          name: { JP: 'LEON', EN: 'LEON' },
+          type: { JP: 'メディア・不動産', EN: 'Media & Real Estate' },
+          description: {
+            JP: 'アパレル雑誌LEONの不動産部門：20年以上の歴史を持つ日本の紳士向けアパレル雑誌で、40代から50代の富裕層をターゲットとし、月間約1,000万ページビューを誇ります。プロジェクト：彼らは日本全国に高級宿泊施設を建設する計画で、そこには家族がマザーベジタブルを体験し、地元の収穫物で作られた食事を楽しめるMother Vegetable施設が併設されます。',
+            EN: 'Real estate division of apparel magazine LEON: A Japanese men\'s apparel magazine with over 20 years of history, targeting affluent individuals in their 40s and 50s, boasting approximately 10 million monthly page views. Project: They plan to build luxury accommodation facilities across Japan, featuring Mother Vegetable facilities where families can experience Mother Vegetable and enjoy meals made with local harvests.'
+          },
+          logo: '/leon.jpeg'
+        },
+        {
+          name: { JP: '九州電工', EN: 'Kyushu Denko' },
+          type: { JP: '電力会社', EN: 'Power Company' },
+          description: {
+            JP: '日本の大手電力会社：藻場（海藻の群落）を造成することで、魚貝類の住処としての機能や水質浄化、さらにはCO₂固定機能を活かした藻場再生の実用化研究に2001年度から取り組んでいます。MOTHER VEGETABLEを活用したバイオマスにより生産性の向上を検討している。',
+            EN: 'Major Japanese power company: Since 2001, engaged in practical research on seaweed bed restoration utilizing functions as habitat for fish and shellfish, water purification, and CO₂ fixation through creating seaweed beds. Exploring productivity improvements through biomass utilizing MOTHER VEGETABLE.'
+          },
+          logo: '/Kyushudenko.jpeg'
+        },
+        {
+          name: { JP: '全国姉妹漁業振興協議会株式会社', EN: 'National Sister Fisheries Promotion Council Inc.' },
+          type: { JP: '漁業振興', EN: 'Fisheries Promotion' },
+          description: {
+            JP: '河津町との連携による海洋事業開発とMother Vegetable事業の推進。全国の漁業組合の連絡窓口を実施。',
+            EN: 'Promoting marine business development and Mother Vegetable business through collaboration with Kawazu Town. Implementing communication channels for fishery associations nationwide.'
+          },
+          logo: '/sfc.jpeg'
         }
       ]
     }
@@ -208,7 +364,7 @@ export default function Partners() {
               <div 
                 className={cn(
                   "transition-all duration-500 ease-in-out overflow-hidden",
-                  category.isOpen ? "max-h-[2000px] opacity-100" : "max-h-0 opacity-0"
+                  category.isOpen ? "max-h-[10000px] opacity-100" : "max-h-0 opacity-0"
                 )}
               >
                 <div className="grid md:grid-cols-3 gap-6">
