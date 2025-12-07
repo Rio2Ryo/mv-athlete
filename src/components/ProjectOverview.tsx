@@ -72,9 +72,12 @@ export default function ProjectOverview() {
                     ))}
                   </ul>
                 </div>
-                <div className="hidden md:block bg-black/50 rounded-2xl p-8 border border-gray-800 h-full flex items-center justify-center">
-                   {/* Placeholder for future image/graphic */}
-                   <div className="text-gray-600 text-sm">{t({ JP: 'イメージエリア', EN: 'Image Area' })}</div>
+                <div className="hidden md:block rounded-2xl overflow-hidden">
+                   <img
+                     src="/001.jpg"
+                     alt="Mother Vegetable Product"
+                     className="w-full h-full object-cover rounded-2xl"
+                   />
                 </div>
               </div>
             </div>
@@ -118,9 +121,12 @@ export default function ProjectOverview() {
                     ))}
                   </ul>
                 </div>
-                <div className="hidden md:block bg-black/50 rounded-2xl p-8 border border-gray-800 h-full flex items-center justify-center">
-                   {/* Placeholder for future image/graphic */}
-                   <div className="text-gray-600 text-sm">{t({ JP: 'イメージエリア', EN: 'Image Area' })}</div>
+                <div className="hidden md:block rounded-2xl overflow-hidden">
+                   <img
+                     src="/002.jpg"
+                     alt="Small Earth Factory"
+                     className="w-full h-full object-cover rounded-2xl"
+                   />
                 </div>
               </div>
             </div>
@@ -164,9 +170,12 @@ export default function ProjectOverview() {
                     ))}
                   </ul>
                 </div>
-                <div className="hidden md:block bg-black/50 rounded-2xl p-8 border border-gray-800 h-full flex items-center justify-center">
-                   {/* Placeholder for future image/graphic */}
-                   <div className="text-gray-600 text-sm">{t({ JP: 'イメージエリア', EN: 'Image Area' })}</div>
+                <div className="hidden md:block rounded-2xl overflow-hidden">
+                   <img
+                     src="/003.jpg"
+                     alt="Carbon Neutral Athlete"
+                     className="w-full h-full object-cover rounded-2xl"
+                   />
                 </div>
               </div>
             </div>
