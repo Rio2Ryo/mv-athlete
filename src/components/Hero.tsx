@@ -78,7 +78,7 @@ export default function Hero() {
           >
               <h1 className="text-xl text-center sm:text-2xl md:text-4xl lg:text-5xl font-semibold leading-tight">
               Mother vegetable<br />
-              Pro sports<br />
+              Pro athletes<br />
               Foundation
             </h1>
           </div>
