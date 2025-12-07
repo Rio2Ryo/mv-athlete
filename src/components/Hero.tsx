@@ -67,43 +67,42 @@ export default function Hero() {
               filter: 'drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3)) drop-shadow(0 2px 4px rgba(34, 197, 94, 0.2))',
             }}
           >
-            <h1 className="text-xl text-left sm:text-2xl md:text-4xl lg:text-5xl font-semibold leading-tight">
-              <div>Mother vegetable</br>
-              Pro sports</br>
-            Foundation</div>
-        </h1>
+              <h1 className="text-xl text-left sm:text-2xl md:text-4xl lg:text-5xl font-semibold leading-tight">
+              Mother vegetable<br />
+              Pro sports<br />
+              Foundation
+            </h1>
+          </div>
+
+          <div className="w-40 md:w-48 h-1.5 bg-gradient-to-r from-transparent via-green-400 to-transparent mx-auto rounded-full mt-6 opacity-80"></div>
+
+        </div>
+
+        {/* Description - Not in Box */}
+        <div className="max-w-4xl mx-auto mb-12 mt-16 px-4">
+          <div className="space-y-3">
+            <p className="text-lg md:text-xl text-[#4ade80] leading-relaxed">
+              {t({
+                JP: '35億年前の地球のはじまりの植物',
+                EN: 'The vegetable from 3.5 billion years ago'
+              })}
+            </p>
+            <p className="text-lg md:text-xl text-[#4ade80] leading-relaxed">
+              {t({
+                JP: '「マザーベジタブル」',
+                EN: '"Mother Vegetable"'
+              })}
+            </p>
+            <p className="text-lg md:text-xl text-[#4ade80] leading-relaxed">
+              {t({
+                JP: '地球が生み出した生命力を、あなたに。',
+                EN: "Earth's life force, for you."
+              })}
+            </p>
+          </div>
+        </div>
+
       </div>
-
-      <div className="w-40 md:w-48 h-1.5 bg-gradient-to-r from-transparent via-green-400 to-transparent mx-auto rounded-full mt-6 opacity-80"></div>
-
-    </div>
-
-
-        {/* Description - Not in Box */ }
-  <div className="max-w-4xl mx-auto mb-12 mt-16 px-4">
-    <div className="space-y-3">
-      <p className="text-lg md:text-xl text-[#4ade80] leading-relaxed">
-        {t({
-          JP: '35億年前の地球のはじまりの植物',
-          EN: 'The vegetable from 3.5 billion years ago'
-        })}
-      </p>
-      <p className="text-lg md:text-xl text-[#4ade80] leading-relaxed">
-        {t({
-          JP: '「マザーベジタブル」',
-          EN: '"Mother Vegetable"'
-        })}
-      </p>
-      <p className="text-lg md:text-xl text-[#4ade80] leading-relaxed">
-        {t({
-          JP: '地球が生み出した生命力を、あなたに。',
-          EN: 'Earth’s life force, for you.'
-        })}
-      </p>
-    </div>
-  </div>
-
-      </div >
-    </section >
+    </section>
   );
 }
