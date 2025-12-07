@@ -124,7 +124,7 @@ export default function Hero() {
               loop
               muted={isMuted}
               playsInline
-              className="w-full h-auto rounded-lg"
+              className="w-1/3 mx-auto h-auto rounded-lg"
             />
             {/* Mute/Unmute indicator */}
             <div className="absolute bottom-4 right-4 bg-black/50 rounded-full p-2 transition-opacity hover:bg-black/70">
