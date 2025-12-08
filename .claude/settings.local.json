@@ -8,7 +8,11 @@
       "Bash(git add:*)",
       "Bash(git commit -m \"$(cat <<''EOF''\nFix: Change base path from /athlete/ to / for Vercel deployment\n\nThe /athlete/ base path caused white screen on Vercel because assets\nwere being loaded from wrong path.\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n)\")",
       "Bash(git push)",
-      "Bash(git commit:*)"
+      "Bash(git commit:*)",
+      "Bash(where:*)",
+      "Bash(pnpm add:*)",
+      "Bash(npm install:*)",
+      "Bash(vercel:*)"
     ],
     "deny": [],
     "ask": []
