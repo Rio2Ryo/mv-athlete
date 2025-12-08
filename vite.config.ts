@@ -8,8 +8,8 @@ import { vitePluginManusRuntime } from "vite-plugin-manus-runtime";
 const plugins = [react(), tailwindcss(), jsxLocPlugin(), vitePluginManusRuntime()];
 
 export default defineConfig({
-  // Vercelのルートにデプロイする場合は "/" を使用
-  base: "/",
+  // /athlete/ サブパスで公開する場合
+  base: "/athlete/",
 
   plugins,
   resolve: {
