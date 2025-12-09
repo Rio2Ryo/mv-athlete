@@ -13,7 +13,7 @@ export default function TokenInfo() {
             <div className="relative w-64 h-64 md:w-80 md:h-80">
               <div className="absolute inset-0 bg-[#4ade80]/20 rounded-full blur-3xl animate-pulse"></div>
               <img 
-                src="/mvt-coin.png" 
+                src={`${import.meta.env.BASE_URL}mvt-coin.png`} 
                 alt="MVP Coin" 
                 className="relative z-10 w-full h-full object-contain drop-shadow-[0_0_30px_rgba(74,222,128,0.3)]"
                 onError={(e) => e.currentTarget.src = "https://placehold.co/400x400/000000/4ade80?text=MVP+Coin"}

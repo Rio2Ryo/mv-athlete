@@ -45,7 +45,7 @@ export default function Hero() {
       {/* Background Image */}
       <div className="absolute inset-0">
         <img
-          src="/hero-earth-regeneration-Dnk2z_VF.png"
+          src={`${import.meta.env.BASE_URL}hero-earth-regeneration-Dnk2z_VF.png`}
           alt="Earth Regeneration"
           className="w-full h-full object-cover"
         />
@@ -60,7 +60,7 @@ export default function Hero() {
           {/* Logo */}
           <div className="mb-6">
             <img
-              src="/mazavege_logo_midori.png"
+              src={`${import.meta.env.BASE_URL}mazavege_logo_midori.png`}
               alt="Mother Vegetable Logo"
               className="mx-auto w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 object-contain"
             />
@@ -119,7 +119,7 @@ export default function Hero() {
           >
             <video
               ref={videoRef}
-              src="/sports_2.mp4"
+              src={`${import.meta.env.BASE_URL}sports_2.mp4`}
               autoPlay
               loop
               muted={isMuted}

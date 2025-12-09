@@ -13,7 +13,7 @@ export default function Footer() {
         {/* Logo */}
         <div className="flex justify-center mb-2">
           <img
-            src="/mazavege_logo_midori.png"
+            src={`${import.meta.env.BASE_URL}mazavege_logo_midori.png`}
             alt="Mother Vegetable Logo"
             className="w-8 h-8 object-contain"
           />
