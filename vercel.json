@@ -1,16 +1,15 @@
 {
   "framework": "vite",
-  "buildCommand": "npm run build",
+  "buildCommand": "npm run build && mkdir -p dist/athlete && cp -r dist/assets dist/athlete/ && cp dist/index.html dist/athlete/",
   "outputDirectory": "dist",
-  "trailingSlash": false,
-  "routes": [
+  "rewrites": [
     {
-      "src": "/athlete/assets/(.*)",
-      "dest": "/assets/$1"
+      "source": "/athlete",
+      "destination": "/athlete/index.html"
     },
     {
-      "src": "/athlete(/.*)?",
-      "dest": "/index.html"
+      "source": "/athlete/(.*)",
+      "destination": "/athlete/index.html"
     }
   ]
 }
