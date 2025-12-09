@@ -4,11 +4,7 @@
   "outputDirectory": "dist",
   "rewrites": [
     {
-      "source": "/athlete/(.*)",
-      "destination": "/index.html"
-    },
-    {
-      "source": "/athlete",
+      "source": "/(.*)",
       "destination": "/index.html"
     }
   ]
