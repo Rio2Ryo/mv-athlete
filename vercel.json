@@ -5,11 +5,11 @@
   "rewrites": [
     {
       "source": "/athlete/(.*)",
-      "destination": "/athlete/index.html"
+      "destination": "/index.html"
     },
     {
       "source": "/athlete",
-      "destination": "/athlete/index.html"
+      "destination": "/index.html"
     }
   ]
 }
