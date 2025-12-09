@@ -19,7 +19,7 @@ export default function Partners() {
             JP: 'マレーシア政府の特別クラス・バイオテクノロジー企業として認定されており、バイオテクノロジー商業化の進歩のための実質的な財政的インセンティブ、税制優遇、制度的サポートへのアクセスを享受しています。',
             EN: 'Certified as a special class biotechnology company by the Malaysian government, enjoying access to substantial financial incentives, tax breaks, and institutional support for the advancement of biotechnology commercialization.'
           },
-          logo: '/images/bionexus_logo.png'
+          logo: '/bionexus_logo.png'
         },
         { 
           name: { JP: 'ASEAN', EN: 'ASEAN' }, 
@@ -28,7 +28,7 @@ export default function Partners() {
             JP: '持続可能な水産養殖および農業セクターにおけるパートナーシップからの公式支援により、東南アジア全10カ国にわたる地域に責任を有し、実際に実行可能な政策とシステムというASEANの共通ビジョンに貢献しています。',
             EN: 'With official support from partnerships in the sustainable aquaculture and agriculture sectors, we are responsible for the region spanning all 10 Southeast Asian countries, contributing to ASEAN\'s shared vision of practical and actionable policies and systems.'
           },
-          logo: '/images/asean_logo.png'
+          logo: '/asean_logo.png'
         },
         { 
           name: { JP: 'ANGKASA', EN: 'ANGKASA' }, 
