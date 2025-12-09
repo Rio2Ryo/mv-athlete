@@ -2,10 +2,15 @@
   "framework": "vite",
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
-  "rewrites": [
+  "trailingSlash": false,
+  "routes": [
     {
-      "source": "/(.*)",
-      "destination": "/index.html"
+      "src": "/athlete/assets/(.*)",
+      "dest": "/assets/$1"
+    },
+    {
+      "src": "/athlete(/.*)?",
+      "dest": "/index.html"
     }
   ]
 }
