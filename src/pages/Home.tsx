@@ -32,6 +32,7 @@ export default function Home() {
           <div className="text-white text-xs text-center mt-2 bg-black/50 backdrop-blur px-2 py-1 rounded">
             <p>Mazavege-chan</p>
             <p>AI Agent</p>
+            <p>Coming Soon!!</p>
           </div>
         </div>
       </div>
