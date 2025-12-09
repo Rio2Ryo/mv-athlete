@@ -8,8 +8,8 @@ import { vitePluginManusRuntime } from "vite-plugin-manus-runtime";
 const plugins = [react(), tailwindcss(), jsxLocPlugin(), vitePluginManusRuntime()];
 
 export default defineConfig({
-  // Vercel単独デプロイ用
-  base: "/",
+  // /athlete サブパス用
+  base: "/athlete/",
 
   plugins,
   resolve: {

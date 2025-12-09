@@ -12,7 +12,8 @@
       "Bash(where:*)",
       "Bash(pnpm add:*)",
       "Bash(npm install:*)",
-      "Bash(vercel:*)"
+      "Bash(vercel:*)",
+      "Bash(npm run build:*)"
     ],
     "deny": [],
     "ask": []

@@ -4,8 +4,12 @@
   "outputDirectory": "dist",
   "rewrites": [
     {
-      "source": "/(.*)",
-      "destination": "/index.html"
+      "source": "/athlete/(.*)",
+      "destination": "/athlete/index.html"
+    },
+    {
+      "source": "/athlete",
+      "destination": "/athlete/index.html"
     }
   ]
 }
