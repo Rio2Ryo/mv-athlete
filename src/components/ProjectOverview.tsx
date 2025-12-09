@@ -74,7 +74,7 @@ export default function ProjectOverview() {
                 </div>
                 <div className="hidden md:block rounded-2xl overflow-hidden">
                    <img
-                     src={`${import.meta.env.BASE_URL}001.jpg`}
+                     src="/001.jpg"
                      alt="Mother Vegetable Product"
                      className="w-full h-full object-cover rounded-2xl"
                    />
@@ -123,7 +123,7 @@ export default function ProjectOverview() {
                 </div>
                 <div className="hidden md:block rounded-2xl overflow-hidden">
                    <img
-                     src={`${import.meta.env.BASE_URL}002.jpg`}
+                     src="/002.jpg"
                      alt="Small Earth Factory"
                      className="w-full h-full object-cover rounded-2xl"
                    />
@@ -172,7 +172,7 @@ export default function ProjectOverview() {
                 </div>
                 <div className="hidden md:block rounded-2xl overflow-hidden">
                    <img
-                     src={`${import.meta.env.BASE_URL}003.jpg`}
+                     src="/003.jpg"
                      alt="Carbon Neutral Athlete"
                      className="w-full h-full object-cover rounded-2xl"
                    />

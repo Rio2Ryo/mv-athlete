@@ -44,7 +44,7 @@ export default function Header() {
         {/* Logo */}
         <div className="flex items-center cursor-pointer" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
           <img 
-            src={`${import.meta.env.BASE_URL}logo-uCgt3dQ.png`} 
+            src="/logo-uCgt3dQ.png" 
             alt="MOTHER VEGETABLE" 
             className="h-12 md:h-16 w-auto object-contain" 
           />

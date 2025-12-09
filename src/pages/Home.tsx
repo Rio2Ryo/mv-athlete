@@ -23,7 +23,7 @@ export default function Home() {
         <div className="fixed bottom-4 right-4 z-50 flex flex-col items-center pointer-events-none">
           <div className="w-16 h-16 md:w-24 md:h-24 rounded-full bg-gray-800 border-2 border-[#4ade80] overflow-hidden shadow-[0_0_20px_rgba(74,222,128,0.3)]">
             <img
-              src={`${import.meta.env.BASE_URL}mazavegechan.gif`}
+              src="/mazavegechan.gif"
               alt="Mazavege-chan"
               className="w-full h-full object-cover"
               onError={(e) => e.currentTarget.src = "https://placehold.co/100x100/000000/4ade80?text=AI"}
