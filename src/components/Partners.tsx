@@ -178,15 +178,6 @@ export default function Partners() {
             EN: 'Providing comprehensive ward-level support systems for marine industry development and sustainable technology implementation.'
           },
           logo: '/itabashi-ward.jpeg'
-        },
-        {
-          name: { JP: '水産庁（日本）', EN: 'Fisheries Agency (Japan)' },
-          type: { JP: '政府機関', EN: 'Government Agency' },
-          description: {
-            JP: '日本における海洋産業の振興とMother Vegetableの導入支援',
-            EN: 'Supporting the promotion of marine industry and introduction of Mother Vegetable in Japan'
-          },
-          logo: '/fisheries-agency.jpeg'
         }
       ]
     },{
