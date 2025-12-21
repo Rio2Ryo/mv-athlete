@@ -119,7 +119,7 @@ export default function Hero() {
           >
             <video
               ref={videoRef}
-              src="/sports_v3.mp4"
+              src="/athlete/sports_v3.mp4"
               autoPlay
               loop
               muted={isMuted}
