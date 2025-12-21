@@ -20,7 +20,10 @@
       "Bash(ren:*)",
       "Bash(ls:*)",
       "Bash(git ls-files:*)",
-      "Bash(xxd:*)"
+      "Bash(xxd:*)",
+      "Bash(git rm:*)",
+      "Bash(git hash-object:*)",
+      "Bash(git ls-tree:*)"
     ],
     "deny": [],
     "ask": []
