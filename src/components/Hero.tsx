@@ -119,14 +119,14 @@ export default function Hero() {
           >
             <video
               ref={videoRef}
-              src="/sports_2.mp4"
+              src="/sports_3.mp4"
               autoPlay
               loop
               muted={isMuted}
               playsInline
               className="w-64 md:w-80 h-auto rounded-lg"
             />
-            {/* Mute/Unmute indicator */}
+            {/* Mute/Unmute indicators */}
             <div className="absolute bottom-2 right-2 bg-black/50 rounded-full p-1.5 transition-opacity hover:bg-black/70">
               {isMuted ? (
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
