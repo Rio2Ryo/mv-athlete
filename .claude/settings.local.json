@@ -15,7 +15,9 @@
       "Bash(vercel:*)",
       "Bash(npm run build:*)",
       "WebFetch(domain:mvathletefoundation.vercel.app)",
-      "Bash(curl:*)"
+      "Bash(curl:*)",
+      "Bash(dir:*)",
+      "Bash(ren:*)"
     ],
     "deny": [],
     "ask": []
