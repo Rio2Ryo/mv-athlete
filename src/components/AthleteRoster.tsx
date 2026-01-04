@@ -1,6 +1,16 @@
 import { useLanguage } from '@/contexts/LanguageContext';
+import { useEffect, useRef } from 'react';
 
 export default function AthleteRoster() {
+  const videoRef = useRef<HTMLVideoElement>(null);
+
+  useEffect(() => {
+    if (videoRef.current) {
+      videoRef.current.play().catch(() => {
+        // 自動再生がブロックされた場合は無視
+      });
+    }
+  }, []);
   const { t } = useLanguage();
 
   const roster = [
@@ -56,11 +66,13 @@ export default function AthleteRoster() {
               <div className="aspect-[4/3] bg-gray-800 relative overflow-hidden">
                 {item.video ? (
                   <video
+                    ref={videoRef}
                     src={item.video}
                     autoPlay
                     muted
                     loop
                     playsInline
+                    preload="auto"
                     className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-110"
                   />
                 ) : (
