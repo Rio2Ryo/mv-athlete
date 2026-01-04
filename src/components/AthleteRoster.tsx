@@ -20,7 +20,8 @@ export default function AthleteRoster() {
         JP: '北海道十勝出身のバドミントン選手。世界バドミントン選手権大会女子ダブルスで2年連続金メダルを獲得（2018, 2019）。「ナガマツペア」として世界を舞台に活躍し、東京・パリと2大会連続でオリンピックに出場。地元十勝の誇りとして、スポーツを通じた地域貢献にも積極的。',
         EN: 'Badminton player from Tokachi, Hokkaido. Won gold medals in Women\'s Doubles at the BWF World Championships for two consecutive years (2018, 2019). Competed on the world stage as part of the "Naga-Matsu pair" and participated in two consecutive Olympics in Tokyo and Paris. Actively contributes to the community through sports as the pride of her hometown Tokachi.'
       },
-      image: '/avatar_nagahara_badminton.png'
+      image: '/avatar_nagahara_badminton.png',
+      video: '/mv.mp4'
     },
     {
       name: { JP: 'KNOCK OUT', EN: 'KNOCK OUT' },
@@ -53,11 +54,22 @@ export default function AthleteRoster() {
           {roster.map((item, index) => (
             <div key={index} className="bg-[#0f172a] border border-gray-800 rounded-xl overflow-hidden hover:border-[#4ade80]/50 transition-all duration-300 flex flex-col h-full group">
               <div className="aspect-[4/3] bg-gray-800 relative overflow-hidden">
-                <img 
-                  src={item.image} 
-                  alt={t(item.name)}
-                  className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-110"
-                />
+                {item.video ? (
+                  <video
+                    src={item.video}
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
+                    className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-110"
+                  />
+                ) : (
+                  <img
+                    src={item.image}
+                    alt={t(item.name)}
+                    className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-110"
+                  />
+                )}
                 <div className="absolute inset-0 bg-gradient-to-t from-[#0f172a] via-transparent to-transparent opacity-90"></div>
                 {item.logo && (
                   <div className="absolute top-4 right-4 w-16 h-16 bg-white rounded-full p-1 shadow-lg z-10">
