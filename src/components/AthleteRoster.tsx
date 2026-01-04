@@ -31,7 +31,7 @@ export default function AthleteRoster() {
         EN: 'Badminton player from Tokachi, Hokkaido. Won gold medals in Women\'s Doubles at the BWF World Championships for two consecutive years (2018, 2019). Competed on the world stage as part of the "Naga-Matsu pair" and participated in two consecutive Olympics in Tokyo and Paris. Actively contributes to the community through sports as the pride of her hometown Tokachi.'
       },
       image: '/avatar_nagahara_badminton.png',
-      video: '/mv.mp4'
+      video: import.meta.env.BASE_URL + 'mv.mp4'
     },
     {
       name: { JP: 'KNOCK OUT', EN: 'KNOCK OUT' },
