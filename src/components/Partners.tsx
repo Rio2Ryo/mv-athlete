@@ -245,15 +245,7 @@ export default function Partners() {
           },
           logo: '/cropabl.jpeg'
         },
-        {
-          name: { JP: 'Sabah Invest', EN: 'Sabah Invest' },
-          type: { JP: '投資機関', EN: 'Investment Agency' },
-          description: {
-            JP: 'サバ州政府とのパートナーシップのもとでMOTHER VEGETABLEプロジェクトの実施を強力に支援する意向を示しています。この取り組みは、輸入食品への依存度が高いサバを、自給自足が可能で輸出余剰を生み出せる州へと変革することを目指しています。MOTHER VEGETABLEの先進的な持続可能農業技術を採用することで、このプロジェクトは食料安全保障を強化し、外部のサプライチェーンへの依存を減らし、サバを農業・食品生産の地域的リーダーへと押し上げます。この変革は、地域のレジリエンスを高めるだけでなく、輸出市場の開拓を通じて新たな経済的機会を創出し、州の長期的な繁栄と持続可能性に貢献します。',
-            EN: 'Expressing strong intention to support the implementation of the MOTHER VEGETABLE project in partnership with the Sabah State Government. This initiative aims to transform Sabah from high dependency on imported food to a self-sufficient state capable of generating export surplus. By adopting MOTHER VEGETABLE\' advanced sustainable farming technology, this project will strengthen food security, reduce dependence on external supply chains, and position Sabah as a regional leader in agriculture and food production. This transformation will not only enhance local resilience but also create new economic opportunities through export market development, contributing to the state\'s long-term prosperity and sustainability.'
-          },
-          logo: '/sabah-invest.jpeg'
-        },
+
         {
           name: { JP: 'Healcom Foundation', EN: 'Healcom Foundation' },
           type: { JP: '財団', EN: 'Foundation' },
