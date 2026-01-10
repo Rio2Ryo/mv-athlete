@@ -41,6 +41,7 @@ export default function AthleteRoster() {
         EN: 'A ring to decide the strongest in striking martial arts with the concept of "Strike, Kick, Slash". Opening up new possibilities for kickboxing and delivering emotion and excitement to the audience through the heated battles of the fighters. Participating as a partner to balance environmental consideration and the development of sports.'
       },
       image: '/avatar_knockout_kickboxers.png',
+      video: import.meta.env.BASE_URL + 'boxing.mov',
       logo: '/knockout_logo_official.jpg'
     }
   ];
