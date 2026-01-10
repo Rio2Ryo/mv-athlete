@@ -21,7 +21,8 @@ export default function AthleteRoster() {
         JP: 'アテネオリンピック 4x400mリレー日本代表。第3走者として日本過去最高順位の4位入賞に貢献。現在はプロスプリントコーチとして、次世代のアスリート育成や、走りのメソッドを通じた教育活動に尽力している。',
         EN: 'Athens Olympian, 4x400m Relay Japan Representative. Contributed to Japan\'s highest-ever 4th place finish as the third runner. Currently dedicated to nurturing the next generation of athletes and educational activities through sprinting methods as a professional sprint coach.'
       },
-      image: '/avatar_ito_track.png'
+      image: '/avatar_ito_track.png',
+      video: import.meta.env.BASE_URL + 'run.mov'
     },
     {
       name: { JP: '永原 和可那', EN: 'Wakana Nagahara' },
