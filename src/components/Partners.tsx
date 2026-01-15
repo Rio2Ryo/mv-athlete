@@ -12,15 +12,7 @@ export default function Partners() {
       title: { JP: '政府・公的機関・地域パートナー', EN: 'Government, Public & Regional Partners' },
       isOpen: true,
       partners: [
-        { 
-          name: { JP: 'BioNexus ステータス企業', EN: 'BioNexus Status Company' }, 
-          type: { JP: 'マレーシア政府認可', EN: 'Malaysian Government Certified' },
-          description: {
-            JP: 'マレーシア政府の特別クラス・バイオテクノロジー企業として認定されており、バイオテクノロジー商業化の進歩のための実質的な財政的インセンティブ、税制優遇、制度的サポートへのアクセスを享受しています。',
-            EN: 'Certified as a special class biotechnology company by the Malaysian government, enjoying access to substantial financial incentives, tax breaks, and institutional support for the advancement of biotechnology commercialization.'
-          },
-          logo: '/bionexus_logo.png'
-        },
+       
         { 
           name: { JP: 'ASEAN', EN: 'ASEAN' }, 
           type: { JP: '東南アジア諸国連合', EN: 'Association of Southeast Asian Nations' },
