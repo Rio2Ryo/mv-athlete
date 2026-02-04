@@ -51,7 +51,7 @@ export default function AthleteRoster() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+        <div className="grid md:grid-cols-2 gap-6 max-w-6xl mx-auto">
           {roster.map((item, index) => (
             <div key={index} className="bg-[#0f172a] border border-gray-800 rounded-xl overflow-hidden hover:border-[#4ade80]/50 transition-all duration-300 flex flex-col h-full group">
               <div className="aspect-[4/3] bg-gray-800 relative overflow-hidden">
