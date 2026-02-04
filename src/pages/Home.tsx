@@ -19,7 +19,7 @@ export default function Home() {
         </main>
         <Footer />
         
-        {/* Mazavege-chan Fixed Widget (Placeholder) */}
+        {/* Mazavege-chan Fixed Widget (Placeholder)
         <div className="fixed bottom-4 right-4 z-50 flex flex-col items-center pointer-events-none">
           <div className="w-16 h-16 md:w-24 md:h-24 rounded-full bg-gray-800 border-2 border-[#4ade80] overflow-hidden shadow-[0_0_20px_rgba(74,222,128,0.3)]">
             <img
@@ -34,7 +34,7 @@ export default function Home() {
             <p>AI Agent</p>
             <p>Coming Soon!!</p>
           </div>
-        </div>
+        </div>*/}
       </div>
     </LanguageProvider>
   );
