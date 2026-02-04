@@ -33,17 +33,6 @@ export default function AthleteRoster() {
       },
       image: '/avatar_nagahara_badminton.png',
       video: import.meta.env.BASE_URL + 'mv.mp4'
-    },
-    {
-      name: { JP: 'KNOCK OUT', EN: 'KNOCK OUT' },
-      title: { JP: 'キックボクシング団体', EN: 'Professional Kickboxing Organization' },
-      description: {
-        JP: '「撃つ・蹴る・斬る」をコンセプトに、立ち技格闘技の最強を決めるリング。キックボクシングの新たな可能性を切り拓き、選手たちの熱い戦いを通じて観客に感動と興奮を届ける。環境への配慮とスポーツの発展を両立させるパートナーとして参画。',
-        EN: 'A ring to decide the strongest in striking martial arts with the concept of "Strike, Kick, Slash". Opening up new possibilities for kickboxing and delivering emotion and excitement to the audience through the heated battles of the fighters. Participating as a partner to balance environmental consideration and the development of sports.'
-      },
-      image: '/avatar_knockout_kickboxers.png',
-      video: import.meta.env.BASE_URL + 'boxing.mov',
-      logo: '/knockout_logo_official.jpg'
     }
   ];
 
