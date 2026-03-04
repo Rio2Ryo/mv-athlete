@@ -12,9 +12,9 @@ export default function Partners() {
       title: { JP: '政府・公的機関・地域パートナー', EN: 'Government, Public & Regional Partners' },
       isOpen: true,
       partners: [
-       
-        { 
-          name: { JP: 'ASEAN', EN: 'ASEAN' }, 
+
+        {
+          name: { JP: 'ASEAN', EN: 'ASEAN' },
           type: { JP: '東南アジア諸国連合', EN: 'Association of Southeast Asian Nations' },
           description: {
             JP: '持続可能な水産養殖および農業セクターにおけるパートナーシップからの公式支援により、東南アジア全10カ国にわたる地域に責任を有し、実際に実行可能な政策とシステムというASEANの共通ビジョンに貢献しています。',
@@ -22,8 +22,8 @@ export default function Partners() {
           },
           logo: '/asean_logo.png'
         },
-        { 
-          name: { JP: 'ANGKASA', EN: 'ANGKASA' }, 
+        {
+          name: { JP: 'ANGKASA', EN: 'ANGKASA' },
           type: { JP: 'マレーシア政府機関', EN: 'Malaysian Government Agency' },
           description: {
             JP: '16,000以上の協同組合と730万人の組合員を代表する協同組合開発庁の組合員として、1,596億収益455億を超える価値を有しており、マレーシアの中核経済活動における第一セクターとして技術革新を果たしています。',
@@ -31,32 +31,32 @@ export default function Partners() {
           },
           logo: '/images/angkasa_logo.png'
         },
-        { 
-          name: { JP: 'Invest Selangor', EN: 'Invest Selangor' }, 
-          type: { JP: '政府機関', EN: 'Government Agency' }, 
-          description: { 
-            JP: 'セランゴール州政府が提供する優遇支援エコシステムの一員として、効率的な行政プロセス、カスタマイズされたインセンティブパッケージ、業界特化型プログラム、ネットワークとインフラへのアクセスを提供し、マレーシアで最も経済的に活発な州の一つでのプロジェクト成功を促進することを目指しています。', 
+        {
+          name: { JP: 'Invest Selangor', EN: 'Invest Selangor' },
+          type: { JP: '政府機関', EN: 'Government Agency' },
+          description: {
+            JP: 'セランゴール州政府が提供する優遇支援エコシステムの一員として、効率的な行政プロセス、カスタマイズされたインセンティブパッケージ、業界特化型プログラム、ネットワークとインフラへのアクセスを提供し、マレーシアで最も経済的に活発な州の一つでのプロジェクト成功を促進することを目指しています。',
             EN: 'Member of the preferential support ecosystem provided by the Selangor State Government, including efficient administrative processes, customized incentive packages, industry-specific programs, and access to networks and infrastructure, aiming to promote project success in one of Malaysia\'s most economically active states.'
-          }, 
-          logo: '/images/invest_selangor_logo.png' 
+          },
+          logo: '/images/invest_selangor_logo.png'
         },
-        { 
-          name: { JP: 'NEGERI PAHANG', EN: 'NEGERI PAHANG' }, 
-          type: { JP: 'パハン州政府', EN: 'Pahang State Government' }, 
-          description: { 
-            JP: 'マレーシア・パハン州の投資・産業・科学・技術・革新委員会の委員長より、Mother Vegetableへの投資提案に対する支援を受けています。特に技術と近代的な農業手法を用いて収量、効率、生産性を向上させることで、パハン州の農業セクターの経済発展を強化することを目指しています。執行委員会は、土地、資本、ネットワークを調整することで、大規模な持続可能な農業イニシアチブを加速させる触媒的な役割を果たしています。このパートナーシップは、民間セクターの投資とマレーシアの国家食料安全保障目標との整合性を強化します。', 
-            EN: 'The Chairman of the Investment, Industry, Science, Technology and Innovation Committee of Pahang State, Malaysia has given us support for the proposed investment in Mother Vegetable to enhance economic development of Pahang\'s agricultural sector, particularly through the use of technology and modern farming methods to increase yields, efficiency and productivity. The Executive Committee plays a catalytic role in accelerating large-scale sustainable agriculture initiatives by coordinating land, capital and networks. This partnership strengthens the alignment between private sector investment and Malaysia\'s national food security objectives.' 
-          }, 
-          logo: '/images/pahang_logo.jpg' 
+        {
+          name: { JP: 'NEGERI PAHANG', EN: 'NEGERI PAHANG' },
+          type: { JP: 'パハン州政府', EN: 'Pahang State Government' },
+          description: {
+            JP: 'マレーシア・パハン州の投資・産業・科学・技術・革新委員会の委員長より、Mother Vegetableへの投資提案に対する支援を受けています。特に技術と近代的な農業手法を用いて収量、効率、生産性を向上させることで、パハン州の農業セクターの経済発展を強化することを目指しています。執行委員会は、土地、資本、ネットワークを調整することで、大規模な持続可能な農業イニシアチブを加速させる触媒的な役割を果たしています。このパートナーシップは、民間セクターの投資とマレーシアの国家食料安全保障目標との整合性を強化します。',
+            EN: 'The Chairman of the Investment, Industry, Science, Technology and Innovation Committee of Pahang State, Malaysia has given us support for the proposed investment in Mother Vegetable to enhance economic development of Pahang\'s agricultural sector, particularly through the use of technology and modern farming methods to increase yields, efficiency and productivity. The Executive Committee plays a catalytic role in accelerating large-scale sustainable agriculture initiatives by coordinating land, capital and networks. This partnership strengthens the alignment between private sector investment and Malaysia\'s national food security objectives.'
+          },
+          logo: '/images/pahang_logo.jpg'
         },
-        { 
-          name: { JP: 'YTAA', EN: 'YTAA' }, 
-          type: { JP: 'Yayasan Tengku Abdul Aziz Sultan Abu Bakar', EN: 'Yayasan Tengku Abdul Aziz Sultan Abu Bakar' }, 
-          description: { 
-            JP: 'YTAAは社会的インパクトのためのチャネルとして機能し、サブスクリプション負担の軽減、教育イニシアチブ、ヘルスケアプログラム、マイクロファイナンスプロジェクトへの直接的な資金提供を確保し、地域教育、ホリスティックヘルス、持続可能性におけるエンジニアリングプロジェクトで協力しています。', 
-            EN: 'YTAA functions as a channel for social impact, ensuring direct funding for subscription burden reduction, educational initiatives, healthcare programs and microfinance projects, collaborating on engineering projects in regional education, holistic health and sustainability.' 
-          }, 
-          logo: '/images/ytaa_logo.png' 
+        {
+          name: { JP: 'YTAA', EN: 'YTAA' },
+          type: { JP: 'Yayasan Tengku Abdul Aziz Sultan Abu Bakar', EN: 'Yayasan Tengku Abdul Aziz Sultan Abu Bakar' },
+          description: {
+            JP: 'YTAAは社会的インパクトのためのチャネルとして機能し、サブスクリプション負担の軽減、教育イニシアチブ、ヘルスケアプログラム、マイクロファイナンスプロジェクトへの直接的な資金提供を確保し、地域教育、ホリスティックヘルス、持続可能性におけるエンジニアリングプロジェクトで協力しています。',
+            EN: 'YTAA functions as a channel for social impact, ensuring direct funding for subscription burden reduction, educational initiatives, healthcare programs and microfinance projects, collaborating on engineering projects in regional education, holistic health and sustainability.'
+          },
+          logo: '/images/ytaa_logo.png'
         }
       ]
     },
@@ -65,68 +65,68 @@ export default function Partners() {
       title: { JP: '学術・研究機関', EN: 'Academic & Research Institutions' },
       isOpen: false,
       partners: [
-        { 
-          name: { JP: 'ノッティンガム大学', EN: 'University of Nottingham' }, 
-          type: { JP: '共同研究', EN: 'Joint Research' }, 
-          description: { 
-            JP: '大学構内における3エーカーの施設をMother Vegetable事業に提供する戦略的協力体制を構築し、研究開発の発展のため尊敬されるバイオテクノロジーチームによるサポートを受けています。', 
-            EN: 'We have established a strategic cooperation system that provides 3 acres of facilities within the university campus for the Mother Vegetable business, supported by a respected biotechnology team for the advancement of research and development.' 
-          }, 
-          logo: '/images/nottingham_logo.png' 
+        {
+          name: { JP: 'ノッティンガム大学', EN: 'University of Nottingham' },
+          type: { JP: '共同研究', EN: 'Joint Research' },
+          description: {
+            JP: '大学構内における3エーカーの施設をMother Vegetable事業に提供する戦略的協力体制を構築し、研究開発の発展のため尊敬されるバイオテクノロジーチームによるサポートを受けています。',
+            EN: 'We have established a strategic cooperation system that provides 3 acres of facilities within the university campus for the Mother Vegetable business, supported by a respected biotechnology team for the advancement of research and development.'
+          },
+          logo: '/images/nottingham_logo.png'
         },
-        { 
-          name: { JP: 'シンガポール国立大学', EN: 'National University of Singapore' }, 
-          type: { JP: '共同研究', EN: 'Joint Research' }, 
-          description: { 
-            JP: '農業や水産養殖、生物的防除剤、製品開発の分野において、科学的専門知識と革新を提供するパートナーシップを結んでいます。私たちの活動の基盤となる科学を強化し、イニシアチブが最先端の研究に基づいていることを確保することが重要です。彼らの支援を受けて、特に私たちの主力プロジェクトであるMother Vegetableプロジェクトを通じて、持続可能なソリューションの開発と商業化を加速することが可能になります。', 
-            EN: 'We partner to provide scientific expertise and innovation in agriculture, aquaculture, biocontrol agents, and product development. Strengthening the science behind our activities and ensuring our initiatives are based on cutting-edge research is crucial. With their support, we can accelerate the development and commercialization of sustainable solutions, especially through our flagship Mother Vegetable project.' 
-          }, 
-          logo: '/images/nus_logo.png' 
+        {
+          name: { JP: 'シンガポール国立大学', EN: 'National University of Singapore' },
+          type: { JP: '共同研究', EN: 'Joint Research' },
+          description: {
+            JP: '農業や水産養殖、生物的防除剤、製品開発の分野において、科学的専門知識と革新を提供するパートナーシップを結んでいます。私たちの活動の基盤となる科学を強化し、イニシアチブが最先端の研究に基づいていることを確保することが重要です。彼らの支援を受けて、特に私たちの主力プロジェクトであるMother Vegetableプロジェクトを通じて、持続可能なソリューションの開発と商業化を加速することが可能になります。',
+            EN: 'We partner to provide scientific expertise and innovation in agriculture, aquaculture, biocontrol agents, and product development. Strengthening the science behind our activities and ensuring our initiatives are based on cutting-edge research is crucial. With their support, we can accelerate the development and commercialization of sustainable solutions, especially through our flagship Mother Vegetable project.'
+          },
+          logo: '/images/nus_logo.png'
         },
-        { 
-          name: { JP: 'マラヤ大学', EN: 'Universiti Malaya' }, 
-          type: { JP: '共同研究', EN: 'Joint Research' }, 
-          description: { 
-            JP: 'マレーシアの最高学府であるマラヤ大学と研究開発分野で連携しています。同大学の優れた学術的知見と科学技術の専門性により、私たちの技術革新が大きく前進しています。この産学連携を通じて、持続可能な発展と社会実装を目指した研究開発を共同で進めており、Mother Vegetableプロジェクトの科学的基盤を強化しています。', 
-            EN: 'We collaborate in R&D with Universiti Malaya, Malaysia\'s premier institution. Their academic excellence and scientific expertise significantly advance our technological innovation. Through this industry-academia collaboration, we jointly pursue R&D aimed at sustainable development and social implementation, strengthening the scientific foundation of the Mother Vegetable project.' 
-          }, 
-          logo: '/images/malaya_logo.png' 
+        {
+          name: { JP: 'マラヤ大学', EN: 'Universiti Malaya' },
+          type: { JP: '共同研究', EN: 'Joint Research' },
+          description: {
+            JP: 'マレーシアの最高学府であるマラヤ大学と研究開発分野で連携しています。同大学の優れた学術的知見と科学技術の専門性により、私たちの技術革新が大きく前進しています。この産学連携を通じて、持続可能な発展と社会実装を目指した研究開発を共同で進めており、Mother Vegetableプロジェクトの科学的基盤を強化しています。',
+            EN: 'We collaborate in R&D with Universiti Malaya, Malaysia\'s premier institution. Their academic excellence and scientific expertise significantly advance our technological innovation. Through this industry-academia collaboration, we jointly pursue R&D aimed at sustainable development and social implementation, strengthening the scientific foundation of the Mother Vegetable project.'
+          },
+          logo: '/images/malaya_logo.png'
         },
-        { 
-          name: { JP: 'マレーシア科学大学', EN: 'Universiti Sains Malaysia' }, 
-          type: { JP: '共同研究', EN: 'Joint Research' }, 
-          description: { 
-            JP: '微細藻類研究の分野で国際的に高い評価を受けているマレーシア科学大学と共同研究を実施しています。同大学の専門知識と研究施設を活用し、微細藻類の可能性を最大限に引き出す技術開発を進めています。持続可能な社会の実現に向けて、基礎研究から応用開発まで幅広い分野で協力関係を構築しています。', 
-            EN: 'We are conducting joint research with Universiti Sains Malaysia, which is internationally renowned in the field of microalgae research. Utilizing the university\'s expertise and research facilities, we are developing technologies to maximize the potential of microalgae. We are building cooperative relationships in a wide range of fields, from basic research to applied development, towards the realization of a sustainable society.' 
-          }, 
-          logo: '/images/usm_logo.png' 
+        {
+          name: { JP: 'マレーシア科学大学', EN: 'Universiti Sains Malaysia' },
+          type: { JP: '共同研究', EN: 'Joint Research' },
+          description: {
+            JP: '微細藻類研究の分野で国際的に高い評価を受けているマレーシア科学大学と共同研究を実施しています。同大学の専門知識と研究施設を活用し、微細藻類の可能性を最大限に引き出す技術開発を進めています。持続可能な社会の実現に向けて、基礎研究から応用開発まで幅広い分野で協力関係を構築しています。',
+            EN: 'We are conducting joint research with Universiti Sains Malaysia, which is internationally renowned in the field of microalgae research. Utilizing the university\'s expertise and research facilities, we are developing technologies to maximize the potential of microalgae. We are building cooperative relationships in a wide range of fields, from basic research to applied development, towards the realization of a sustainable society.'
+          },
+          logo: '/images/usm_logo.png'
         },
-        { 
-          name: { JP: 'マレーシア国民大学', EN: 'Universiti Kebangsaan Malaysia' }, 
-          type: { JP: '共同研究', EN: 'Joint Research' }, 
-          description: { 
-            JP: 'Mother Vegetableプロジェクトの革新性と持続可能性に高い関心を示していただき、全面的な支援を受けています。現在、大学キャンパス内にMother Vegetable施設を設置する計画が進行中で、教育・研究・社会実装を一体化した新しいモデルの構築を目指しています。科学技術の発展と社会課題の解決に向けて、包括的な産学連携を推進しています。', 
-            EN: 'They have shown great interest in the innovation and sustainability of the Mother Vegetable project and are providing full support. Plans are currently underway to establish a Mother Vegetable facility within the university campus, aiming to build a new model that integrates education, research, and social implementation. We are promoting comprehensive industry-academia collaboration for the development of science and technology and the solution of social issues.' 
-          }, 
-          logo: '/images/ukm_logo.png' 
+        {
+          name: { JP: 'マレーシア国民大学', EN: 'Universiti Kebangsaan Malaysia' },
+          type: { JP: '共同研究', EN: 'Joint Research' },
+          description: {
+            JP: 'Mother Vegetableプロジェクトの革新性と持続可能性に高い関心を示していただき、全面的な支援を受けています。現在、大学キャンパス内にMother Vegetable施設を設置する計画が進行中で、教育・研究・社会実装を一体化した新しいモデルの構築を目指しています。科学技術の発展と社会課題の解決に向けて、包括的な産学連携を推進しています。',
+            EN: 'They have shown great interest in the innovation and sustainability of the Mother Vegetable project and are providing full support. Plans are currently underway to establish a Mother Vegetable facility within the university campus, aiming to build a new model that integrates education, research, and social implementation. We are promoting comprehensive industry-academia collaboration for the development of science and technology and the solution of social issues.'
+          },
+          logo: '/images/ukm_logo.png'
         },
-        { 
-          name: { JP: 'マヒドン大学', EN: 'Mahidol University' }, 
-          type: { JP: '共同研究', EN: 'Joint Research' }, 
-          description: { 
-            JP: 'タイを代表する研究大学と共同で、家畜飼料における生物的防除剤（BCA）の革新的な応用研究を実施しています。畜産分野における成長促進と疾病耐性向上を目的とした実証実験を進めており、東南アジア地域の畜産業の持続可能な発展に貢献しています。', 
-            EN: 'In collaboration with Thailand\'s leading research university, we are conducting innovative applied research on biological control agents (BCA) in livestock feed. We are proceeding with demonstration experiments aimed at promoting growth and improving disease resistance in the livestock sector, contributing to the sustainable development of the livestock industry in Southeast Asia.' 
-          }, 
-          logo: '/images/mahidol_logo.png' 
+        {
+          name: { JP: 'マヒドン大学', EN: 'Mahidol University' },
+          type: { JP: '共同研究', EN: 'Joint Research' },
+          description: {
+            JP: 'タイを代表する研究大学と共同で、家畜飼料における生物的防除剤（BCA）の革新的な応用研究を実施しています。畜産分野における成長促進と疾病耐性向上を目的とした実証実験を進めており、東南アジア地域の畜産業の持続可能な発展に貢献しています。',
+            EN: 'In collaboration with Thailand\'s leading research university, we are conducting innovative applied research on biological control agents (BCA) in livestock feed. We are proceeding with demonstration experiments aimed at promoting growth and improving disease resistance in the livestock sector, contributing to the sustainable development of the livestock industry in Southeast Asia.'
+          },
+          logo: '/images/mahidol_logo.png'
         },
-        { 
-          name: { JP: '明治大学', EN: 'Meiji University' }, 
-          type: { JP: 'スポンサーシップ協力', EN: 'Sponsorship Cooperation' }, 
-          description: { 
-            JP: '体育会競技者に対してMother Vegetable関連製品を提供するスポンサーシップ協力により、持続可能な栄養ソリューションを通じたスポーツパフォーマンスの支援を実施しています。', 
-            EN: 'Through sponsorship cooperation providing Mother Vegetable related products to athletic association competitors, we are implementing support for sports performance through sustainable nutrition solutions.' 
-          }, 
-          logo: '/images/meiji_logo.png' 
+        {
+          name: { JP: '明治大学', EN: 'Meiji University' },
+          type: { JP: 'スポンサーシップ協力', EN: 'Sponsorship Cooperation' },
+          description: {
+            JP: '体育会競技者に対してMother Vegetable関連製品を提供するスポンサーシップ協力により、持続可能な栄養ソリューションを通じたスポーツパフォーマンスの支援を実施しています。',
+            EN: 'Through sponsorship cooperation providing Mother Vegetable related products to athletic association competitors, we are implementing support for sports performance through sustainable nutrition solutions.'
+          },
+          logo: '/images/meiji_logo.png'
         }
       ]
     },
@@ -172,7 +172,7 @@ export default function Partners() {
           logo: '/itabashi-ward.jpeg'
         }
       ]
-    },{
+    }, {
       id: 'other',
       title: { JP: '国際機関', EN: 'International Organizations' },
       isOpen: false,
@@ -196,7 +196,7 @@ export default function Partners() {
           logo: '/jaif.jpeg'
         }
       ]
-    },{
+    }, {
       id: 'other2',
       title: { JP: 'その他の提携組織・プロジェクト', EN: 'Other Partner Organizations & Projects' },
       isOpen: false,
@@ -236,6 +236,15 @@ export default function Partners() {
             EN: 'A pioneering company with over 20 years of commitment to non-invasive and chemical-free farming, building strong partnerships with government agencies to promote food security and sustainable agricultural practices. Leveraging established green farming technology, now supporting Malaysia\'s MOTHER VEGETABLE and collaborating on modular agricultural solutions development. As part of this initiative, working closely with MOTHER VEGETABLE to implement a 10-acre flagship project in Tanjung Malim, Perak, creating a sustainable food production model aligned with national goals for food security and environmental conservation.'
           },
           logo: '/cropabl.jpeg'
+        },
+        {
+          name: { JP: 'アグリ・ジパング', EN: 'Agri zipang' },
+          type: { JP: '環境事業', EN: 'Environmental Business' },
+          description: {
+            JP: 'アジア圏の海洋産業振興およびMother Vegetable社との連携により、多角的な環境事業を展開しています。海洋分野では藻場の再生活動（ブルーカーボン）や水質改善に取り組み、バイオマス分野ではエネルギー自給率の向上を目指して油脂植物からバイオディーゼルやバイオエタノール等の液体燃料を生産・提供しています。そのほか農業分野においては食料自給率の向上や酪農・畜産農家における飼料コストの削減の推進し、バイオスティミュラント（バイオマスイオンペレット）や植物バイオマスを活用する試みを行っています。',
+            EN: 'Developing diversified environmental businesses through the promotion of marine industries in Asia and collaboration with Mother Vegetable. In the marine sector, we are engaged in seaweed bed restoration (blue carbon) and water quality improvement. In the biomass sector, we produce and supply liquid fuels such as biodiesel and bioethanol from oil-bearing plants, aiming to increase energy self-sufficiency. In the agricultural sector, we are promoting improvements in food self-sufficiency and reducing feed costs for dairy and livestock farmers through the use of biostimulants (biomass ion pellets) and plant biomass.'
+          },
+          logo: '/ag.jpg'
         },
 
         {
@@ -299,7 +308,7 @@ export default function Partners() {
   const [categories, setCategories] = useState(partnerCategories);
 
   const toggleCategory = (id: string) => {
-    setCategories(categories.map(cat => 
+    setCategories(categories.map(cat =>
       cat.id === id ? { ...cat, isOpen: !cat.isOpen } : cat
     ));
   };
@@ -335,8 +344,8 @@ export default function Partners() {
                   <ChevronDown className="w-6 h-6 text-gray-400" />
                 )}
               </button>
-              
-              <div 
+
+              <div
                 className={cn(
                   "transition-all duration-500 ease-in-out overflow-hidden",
                   category.isOpen ? "max-h-[10000px] opacity-100" : "max-h-0 opacity-0"
@@ -344,7 +353,7 @@ export default function Partners() {
               >
                 <div className="grid md:grid-cols-3 gap-6">
                   {category.partners.map((partner, index) => (
-                    <div 
+                    <div
                       key={index}
                       className="bg-[#0f172a] border border-gray-800 rounded-xl p-8 flex flex-col items-center text-center hover:border-[#3b82f6]/50 transition-colors h-full"
                     >
@@ -355,10 +364,10 @@ export default function Partners() {
                           <div className="w-16 h-16 rounded-full bg-gray-200"></div>
                         )}
                       </div>
-                      
+
                       <h4 className="text-white font-bold text-lg mb-2">{t(partner.name)}</h4>
                       <p className="text-[#3b82f6] text-sm font-medium mb-6">{t(partner.type)}</p>
-                      
+
                       {partner.description.JP && (
                         <p className="text-gray-400 text-sm leading-relaxed text-justify">
                           {t(partner.description)}
