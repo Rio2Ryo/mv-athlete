@@ -21,12 +21,17 @@ export default function Header() {
   };
 
   const navItems = [
+    { id: 'home', label: { JP: 'ホーム', EN: 'Home' } },
     { id: 'about', label: { JP: 'プロジェクト概要', EN: 'About' } },
     { id: 'team', label: { JP: '支援アスリート', EN: 'Athletes' } },
     { id: 'partners', label: { JP: 'パートナー', EN: 'Partners' } },
   ];
 
   const scrollToSection = (id: string) => {
+    if (id === 'home') {
+      window.location.href = '/';
+      return;
+    }
     const element = document.getElementById(id);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
@@ -35,18 +40,17 @@ export default function Header() {
   };
 
   return (
-    <header 
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-black/80 backdrop-blur-md py-4 shadow-lg' : 'bg-transparent py-6'
-      }`}
+    <header
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-black/80 backdrop-blur-md py-4 shadow-lg' : 'bg-transparent py-6'
+        }`}
     >
       <div className="container mx-auto px-4 flex justify-between items-center">
         {/* Logo */}
         <div className="flex items-center cursor-pointer" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
-          <img 
-            src="/logo-uCgt3dQ.png" 
-            alt="MOTHER VEGETABLE" 
-            className="h-12 md:h-16 w-auto object-contain" 
+          <img
+            src="/logo-uCgt3dQ.png"
+            alt="MOTHER VEGETABLE"
+            className="h-12 md:h-16 w-auto object-contain"
           />
         </div>
 
@@ -61,10 +65,10 @@ export default function Header() {
               {t(item.label)}
             </button>
           ))}
-          
-          <Button 
-            variant="ghost" 
-            size="sm" 
+
+          <Button
+            variant="ghost"
+            size="sm"
             onClick={toggleLanguage}
             className="text-white hover:text-[#4ade80] hover:bg-white/10 gap-2"
           >
@@ -75,16 +79,16 @@ export default function Header() {
 
         {/* Mobile Menu Button */}
         <div className="lg:hidden flex items-center gap-4">
-          <Button 
-            variant="ghost" 
-            size="sm" 
+          <Button
+            variant="ghost"
+            size="sm"
             onClick={toggleLanguage}
             className="text-white hover:text-[#4ade80] hover:bg-white/10"
           >
             {language}
           </Button>
-          
-          <button 
+
+          <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             className="text-white hover:text-[#4ade80] transition-colors"
           >
