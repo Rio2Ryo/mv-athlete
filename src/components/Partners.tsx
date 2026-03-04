@@ -283,15 +283,7 @@ export default function Partners() {
           },
           logo: '/leon.jpeg'
         },
-        {
-          name: { JP: '九州電工', EN: 'Kyushu Denko' },
-          type: { JP: '電力会社', EN: 'Power Company' },
-          description: {
-            JP: '日本の大手電力会社：藻場（海藻の群落）を造成することで、魚貝類の住処としての機能や水質浄化、さらにはCO₂固定機能を活かした藻場再生の実用化研究に2001年度から取り組んでいます。MOTHER VEGETABLEを活用したバイオマスにより生産性の向上を検討している。',
-            EN: 'Major Japanese power company: Since 2001, engaged in practical research on seaweed bed restoration utilizing functions as habitat for fish and shellfish, water purification, and CO₂ fixation through creating seaweed beds. Exploring productivity improvements through biomass utilizing MOTHER VEGETABLE.'
-          },
-          logo: '/Kyushudenko.jpeg'
-        },
+
         {
           name: { JP: '全国姉妹漁業振興協議会株式会社', EN: 'National Sister Fisheries Promotion Council Inc.' },
           type: { JP: '漁業振興', EN: 'Fisheries Promotion' },
