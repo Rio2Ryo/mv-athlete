@@ -3,6 +3,7 @@ import { useLanguage } from '@/contexts/LanguageContext';
 
 export default function Hero() {
   const { t } = useLanguage();
+  const [countdown, setCountdown] = useState('');
   const [isMuted, setIsMuted] = useState(true);
   const videoRef = useRef<HTMLVideoElement>(null);
 
@@ -13,111 +14,134 @@ export default function Hero() {
     }
   };
 
-  // Parallax-style subtle animation for the badge
-  const [scrollY, setScrollY] = useState(0);
   useEffect(() => {
-    const handleScroll = () => setScrollY(window.scrollY);
-    window.addEventListener('scroll', handleScroll, { passive: true });
-    return () => window.removeEventListener('scroll', handleScroll);
+    const targetDate = new Date('2025-11-11T11:00:00Z'); // UTC time
+
+    const updateCountdown = () => {
+      const now = new Date();
+      const difference = targetDate.getTime() - now.getTime();
+
+      if (difference <= 0) {
+        setCountdown('Launched!');
+        return;
+      }
+
+      const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((difference % (1000 * 60)) / 1000);
+
+      setCountdown(`${days}d ${hours}h ${minutes}m ${seconds}s`);
+    };
+
+    updateCountdown(); // Initial update
+    const interval = setInterval(updateCountdown, 1000); // Update every second
+
+    return () => clearInterval(interval); // Cleanup on unmount
   }, []);
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Full-screen Background Video */}
-      <div className="absolute inset-0" onClick={handleVideoClick}>
-        <video
-          ref={videoRef}
-          src={import.meta.env.BASE_URL + 'sports_v3.mp4'}
-          autoPlay
-          loop
-          muted={isMuted}
-          playsInline
-          preload="auto"
+      {/* Background Image */}
+      <div className="absolute inset-0">
+        <img
+          src="/hero-earth-regeneration-Dnk2z_VF.png"
+          alt="Earth Regeneration"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/80"></div>
+        <div className="absolute inset-0 bg-black/60"></div>
       </div>
 
-      {/* Mute/Unmute indicator */}
-      <button
-        onClick={handleVideoClick}
-        className="absolute bottom-6 right-6 z-20 bg-black/50 backdrop-blur-sm rounded-full p-3 transition-all hover:bg-black/70 hover:scale-110 border border-white/10"
-        aria-label={isMuted ? 'Unmute' : 'Mute'}
-      >
-        {isMuted ? (
-          <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z" />
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2" />
-          </svg>
-        ) : (
-          <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z" />
-          </svg>
-        )}
-      </button>
-
       {/* Content */}
-      <div
-        className="relative z-10 text-center max-w-5xl mx-auto px-4"
-        style={{ transform: `translateY(${scrollY * 0.15}px)`, opacity: Math.max(0, 1 - scrollY / 600) }}
-      >
-        {/* Logo */}
-        <div className="mb-8">
-          <img
-            src="/mazavege_logo_midori.png"
-            alt="Mother Vegetable Logo"
-            className="mx-auto w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 object-contain drop-shadow-[0_0_20px_rgba(74,222,128,0.3)]"
-          />
+      <div className="relative z-10 text-center max-w-7xl mx-auto px-4 transition-all duration-1500 pt-40 md:pt-48 lg:pt-56">
+        {/* Title Section - Single Component */}
+        <div className="mb-12">
+
+          {/* Logo */}
+          <div className="mb-6">
+            <img
+              src="/mazavege_logo_midori.png"
+              alt="Mother Vegetable Logo"
+              className="mx-auto w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 object-contain"
+            />
+          </div>
+
+          <div
+            className="inline-block"
+            style={{
+              background: 'linear-gradient(135deg, #4ade80 0%, #22c55e 50%, #16a34a 100%)',
+              WebkitBackgroundClip: 'text',
+              WebkitTextFillColor: 'transparent',
+              backgroundClip: 'text',
+              filter: 'drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3)) drop-shadow(0 2px 4px rgba(34, 197, 94, 0.2))',
+            }}
+          >
+              <h1 className="text-xl text-center sm:text-2xl md:text-4xl lg:text-5xl font-semibold leading-tight">
+              Mother vegetable<br />
+              Pro athletes<br />
+              Foundation
+            </h1>
+          </div>
+
+          <div className="w-40 md:w-48 h-1.5 bg-gradient-to-r from-transparent via-green-400 to-transparent mx-auto rounded-full mt-6 opacity-80"></div>
+
         </div>
 
-        {/* REBORN PROJECT Title */}
-        <div className="mb-4">
-          <span className="text-[#4ade80] text-sm md:text-base font-semibold tracking-[0.3em] uppercase">
-            {t({ JP: 'Mother Vegetable Athlete Foundation', EN: 'Mother Vegetable Athlete Foundation' })}
-          </span>
+        {/* Description - Not in Box */}
+        <div className="max-w-4xl mx-auto mb-12 mt-16 px-4">
+          <div className="space-y-3">
+            <p className="text-lg md:text-xl text-[#4ade80] leading-relaxed">
+              {t({
+                JP: '35億年前の地球のはじまりの植物',
+                EN: 'The vegetable from 3.5 billion years ago'
+              })}
+            </p>
+            <p className="text-lg md:text-xl text-[#4ade80] leading-relaxed">
+              {t({
+                JP: '「マザーベジタブル」',
+                EN: '"Mother Vegetable"'
+              })}
+            </p>
+            <p className="text-lg md:text-xl text-[#4ade80] leading-relaxed">
+              {t({
+                JP: '地球が生み出した生命力を、あなたに。',
+                EN: "Earth's life force, for you."
+              })}
+            </p>
+          </div>
         </div>
 
-        <h1
-          className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black tracking-tight mb-6"
-          style={{
-            background: 'linear-gradient(135deg, #ffffff 0%, #4ade80 50%, #22c55e 100%)',
-            WebkitBackgroundClip: 'text',
-            WebkitTextFillColor: 'transparent',
-            backgroundClip: 'text',
-          }}
-        >
-          REBORN PROJECT
-        </h1>
-
-        <div className="w-24 md:w-32 h-0.5 bg-gradient-to-r from-transparent via-[#4ade80] to-transparent mx-auto mb-8"></div>
-
-        {/* Catchcopy */}
-        <p className="text-xl md:text-2xl lg:text-3xl text-white font-light leading-relaxed mb-4">
-          {t({
-            JP: '人間と地球が',
-            EN: 'A future where humans and Earth'
-          })}
-        </p>
-        <p className="text-xl md:text-2xl lg:text-3xl text-white font-light leading-relaxed mb-8">
-          {t({
-            JP: 'さらなる可能性を手にいれる',
-            EN: 'unlock even greater possibilities'
-          })}
-        </p>
-
-        <p className="text-gray-400 text-sm md:text-base max-w-2xl mx-auto leading-relaxed">
-          {t({
-            JP: 'レジェンドアスリートの力で、次世代の健康と地球環境の再生を実現するプロジェクト。',
-            EN: 'A project that leverages the power of legendary athletes to realize next-generation health and the regeneration of our planet.'
-          })}
-        </p>
-
-        {/* Scroll indicator */}
-        <div className="mt-16 animate-bounce">
-          <svg className="w-6 h-6 text-[#4ade80] mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-          </svg>
+        {/* Video Section */}
+        <div className="flex justify-center mb-12 px-4">
+          <div
+            className="relative inline-block cursor-pointer rounded-lg overflow-hidden"
+            onClick={handleVideoClick}
+          >
+            <video
+              ref={videoRef}
+              src="/athlete/sports_v3.mp4"
+              autoPlay
+              loop
+              muted={isMuted}
+              playsInline
+              className="w-64 md:w-80 h-auto rounded-lg"
+            />
+            {/* Mute/Unmute indicator */}
+            <div className="absolute bottom-2 right-2 bg-black/50 rounded-full p-1.5 transition-opacity hover:bg-black/70">
+              {isMuted ? (
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2" />
+                </svg>
+              ) : (
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z" />
+                </svg>
+              )}
+            </div>
+          </div>
         </div>
+
       </div>
     </section>
   );
