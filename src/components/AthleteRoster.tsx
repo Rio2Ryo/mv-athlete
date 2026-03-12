@@ -13,6 +13,7 @@ export default function AthleteRoster() {
         EN: 'Athens Olympian, 4x400m Relay Japan Representative. Contributed to Japan\'s highest-ever 4th place finish as the third runner. Currently dedicated to nurturing the next generation of athletes and educational activities through sprinting methods as a professional sprint coach.'
       },
       image: '/ito_tomohiro.jpg',
+      imagePosition: 'center 20%',
       video: import.meta.env.BASE_URL + 'run.mov'
     },
     {
@@ -24,6 +25,7 @@ export default function AthleteRoster() {
         EN: 'Badminton player from Tokachi, Hokkaido. Won gold medals in Women\'s Doubles at the BWF World Championships for two consecutive years (2018, 2019). Competed on the world stage as part of the "Naga-Matsu pair" and participated in two consecutive Olympics in Tokyo and Paris. Actively contributes to the community through sports as the pride of her hometown Tokachi.'
       },
       image: '/nagahara_wakana.webp',
+      imagePosition: 'center 15%',
       video: import.meta.env.BASE_URL + 'mv.mp4'
     }
   ];
@@ -55,18 +57,31 @@ export default function AthleteRoster() {
               key={index}
               className="group relative bg-gradient-to-br from-gray-900/80 to-black border border-gray-800/50 rounded-2xl overflow-hidden hover:border-[#4ade80]/40 transition-all duration-500 flex flex-col h-full"
             >
-              {/* Image / Video */}
-              <div className="aspect-[4/3] bg-gray-900 relative overflow-hidden">
+              {/* Image Area - with cinematic treatment */}
+              <div className="aspect-[3/4] sm:aspect-[4/3] bg-black relative overflow-hidden">
+                {/* Dark base for blending */}
+                <div className="absolute inset-0 bg-black"></div>
+
+                {/* Image with blend treatment */}
                 <img
                   src={item.image}
                   alt={t(item.name)}
-                  className="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105"
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  style={{
+                    objectPosition: item.imagePosition,
+                    filter: 'contrast(1.1) brightness(0.9)',
+                  }}
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/20 to-transparent"></div>
+
+                {/* Multi-layer gradient overlay for cinematic feel */}
+                <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/40 to-gray-900/20"></div>
+                <div className="absolute inset-0 bg-gradient-to-r from-gray-900/30 via-transparent to-gray-900/30"></div>
+                {/* Green accent glow from bottom */}
+                <div className="absolute bottom-0 left-0 right-0 h-1/3 bg-gradient-to-t from-[#4ade80]/5 to-transparent"></div>
 
                 {/* Achievement Badge */}
                 <div className="absolute bottom-4 left-4 right-4">
-                  <div className="bg-[#4ade80]/10 backdrop-blur-md border border-[#4ade80]/30 rounded-lg px-4 py-2 inline-block">
+                  <div className="bg-black/60 backdrop-blur-md border border-[#4ade80]/30 rounded-lg px-4 py-2.5 inline-block">
                     <span className="text-[#4ade80] text-xs md:text-sm font-bold tracking-wide">
                       {t(item.achievement)}
                     </span>
